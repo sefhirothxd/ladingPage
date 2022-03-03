@@ -3,10 +3,10 @@
 }
 
 body {
-	background: slategray;
+	background: #fff;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 24px;
+	font-size: 14px;
 	font-weight: normal;
 	width: 100%;
 	max-width: 1440px;
@@ -19,10 +19,14 @@ header {
 	align-items: center;
 	height: 100px;
 	width: 100%;
+	background: darkgray;
 }
 .img-logo {
 	height: 100px;
 	width: 100px;
+}
+.container-url {
+	padding-right: 10px;
 }
 .container-url ul {
 	display: flex;
@@ -34,19 +38,21 @@ header {
 }
 li a {
 	text-decoration-line: none;
-	color: #fff;
+	color: #000;
 }
 li a:hover {
 	text-decoration-line: underline;
 	color: red;
 }
 main {
-	margin-top: 100px;
+	padding-top: 100px;
+	background: darkgray;
 }
 .banner {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
+	padding-bottom: 100px;
 }
 .texto-banner {
 	width: 38%;
@@ -130,8 +136,9 @@ input::placeholder {
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 25px;
-	background-color: darkgray;
+	background-color: #000;
 	font-size: 24px;
+	color: #fff;
 }
 .form-number span {
 	padding-bottom: 5px;
@@ -139,4 +146,46 @@ input::placeholder {
 .img-what {
 	width: 30px;
 	display: block;
+}
+/* 
+
+css de por que elegirnos
+
+*/
+.selection-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+.container-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	row-gap: 60px;
+	margin: 0 auto;
+	margin-top: 50px;
+	flex-wrap: wrap;
+	width: 90%;
+}
+.card-selection {
+	display: flex;
+	align-items: center;
+	width: 350px;
+}
+.title-selection {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.card-selection img {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.expert-text {
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-top: 30px;
 }
