@@ -1,0 +1,142 @@
+* {
+	box-sizing: content-box;
+}
+
+body {
+	background: slategray;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+}
+.img-logo {
+	height: 100px;
+	width: 100px;
+}
+.container-url ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 0;
+	gap: 10px;
+}
+li a {
+	text-decoration-line: none;
+	color: #fff;
+}
+li a:hover {
+	text-decoration-line: underline;
+	color: red;
+}
+main {
+	margin-top: 100px;
+}
+.banner {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.texto-banner {
+	width: 38%;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+}
+.texto-banner p {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+	padding: 10px 40px;
+	max-width: 730px;
+	background: wheat;
+}
+
+.form-title {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.formulario .form-input {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #000;
+	margin-bottom: 30px;
+	outline: none;
+	width: 100%;
+}
+.form-term {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	font-size: 18px;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+.form-term input[type='checkbox'] {
+	transform: scale(1.5);
+	border: none;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #000;
+	opacity: 1; /* Firefox */
+}
+input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #000;
+	opacity: 1; /* Firefox */
+}
+
+.btn-form {
+	background: #000;
+	color: #fff;
+	border: none;
+	width: 150px;
+	padding: 10px 20px;
+	font-size: 24px;
+	cursor: pointer;
+	outline: none;
+}
+.form-number {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	align-items: center;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	background-color: darkgray;
+	font-size: 24px;
+}
+.form-number span {
+	padding-bottom: 5px;
+}
+.img-what {
+	width: 30px;
+	display: block;
+}
