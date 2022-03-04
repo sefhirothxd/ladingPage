@@ -77,19 +77,20 @@ li a:hover {
 	width: 350px;
 	padding: 10px 40px;
 	max-width: 730px;
-	background: wheat;
+	background: #639bc6;
 }
 
 .form-title {
 	text-align: center;
-	font-size: 30px;
+	font-size: 15px;
 	margin-bottom: 30px;
 	margin-top: 20px;
+	color: #fff;
 }
 .formulario .form-input {
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #fff;
 	margin-bottom: 30px;
 	outline: none;
 	width: 100%;
@@ -100,9 +101,9 @@ li a:hover {
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	align-items: center;
-	/* font-size: 18px; */
 	gap: 10px;
 	margin-bottom: 30px;
+	color: #fff;
 }
 .form-term input[type='checkbox'] {
 	transform: scale(1.5);
@@ -113,7 +114,7 @@ li a:hover {
 
 input::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #000;
+	color: #fff;
 	opacity: 1; /* Firefox */
 }
 
@@ -135,7 +136,7 @@ input::placeholder {
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 25px;
-	background-color: #000;
+	background: #81aed1;
 	font-size: 18px;
 	color: #fff;
 }
@@ -267,6 +268,7 @@ protafolio section
 	flex-direction: column;
 	color: #fff;
 	width: 35%;
+	padding-bottom: 50px;
 }
 .footer-contact h2 {
 	margin-bottom: 26px;
