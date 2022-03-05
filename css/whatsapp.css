@@ -4,7 +4,7 @@
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
-	bottom: 20px;
+	/* bottom: 20px; */
 	right: 20px;
 	border: none;
 	color: #fff;
@@ -13,8 +13,26 @@
 	transition: 0.3s;
 	text-align: center;
 	line-height: 45px;
-	transition: 0.3s;
+	/* transition: 0.3s; */
 	z-index: 999;
+	animation-name: animacion1;
+  animation-duration: 2s;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animacion1 {
+  /* THIS CSS IS FOR WHATSAPP BTN */
+from{
+    color: "black";
+    /* margin-top: 0px; */
+		bottom: 10px;
+  }
+to{
+    color: "black";
+    /* margin-top: 30px; */
+		bottom: 30px;
+  }
 }
 .whatsapp svg {
 	transition: 0.3s;
