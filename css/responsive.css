@@ -1,0 +1,93 @@
+/* 
+
+repsosive  section expertos
+
+*/
+
+@media (max-width: 1200px) {
+	.texto-banner p {
+		font-size: 30px;
+	}
+
+	.container-cards {
+		overflow-x: auto;
+		column-gap: 30px;
+		justify-content: center;
+	}
+	.container-cards::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	.container-cards::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+	}
+
+	.container-cards::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	}
+}
+
+@media (max-width: 768px) {
+	.banner {
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 50px 20px 100px;
+		width: 100%;
+	}
+	.texto-banner {
+		width: 80%;
+	}
+	.container-cards {
+		justify-content: flex-start;
+	}
+	.section-contactanos {
+		flex-direction: column;
+		row-gap: 50px;
+		padding: 50px 20px;
+	}
+	.container-text-contactanos {
+		width: 100%;
+	}
+	.footer {
+		flex-direction: column;
+		padding: 50px 20px;
+		align-items: center;
+	}
+	.footer-contact {
+		width: 60%;
+	}
+	.footer-icon-link {
+		width: 60%;
+	}
+}
+
+@media (max-width: 480px) {
+	.texto-banner {
+		width: 100%;
+	}
+	.container-formulario {
+		display: flex;
+		width: 100%;
+	}
+	.formulario {
+		width: 100%;
+	}
+	i {
+		width: 100%;
+	}
+	.container-portafolio-img {
+		padding: 0 20px;
+	}
+	.img-portafolio {
+		height: auto;
+	}
+	.footer-contact {
+		width: 100%;
+	}
+	.footer-icon-link {
+		width: 100%;
+	}
+}
