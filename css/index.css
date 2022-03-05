@@ -171,7 +171,7 @@ css de por que expertos
 
 .section-expertos {
 	background-color: rgba(99, 155, 198, 0.459);
-	padding: -50px 0 50px 0;
+	padding: 20px 0 20px 0;
 }
 .text-expertos {
 	color: #fff;
@@ -201,7 +201,7 @@ css de por que expertos
 .card-exp img {
 	width: 44px;
 	height: 32px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 /* 
 
@@ -216,6 +216,11 @@ contactanos section
 	justify-content: center;
 	align-items: center;
 	column-gap: 100px;
+}
+.section-contactanos img {
+	width: 100%;
+	max-width: 526px;
+	object-fit: cover;
 }
 
 .container-text-contactanos {

@@ -8,6 +8,12 @@ repsosive  section expertos
 	.texto-banner p {
 		font-size: 30px;
 	}
+	.section-contactanos {
+		column-gap: 50px;
+	}
+	.section-contactanos img {
+		min-width: 325px;
+	}
 
 	.container-cards {
 		overflow-x: auto;
@@ -75,6 +81,10 @@ repsosive  section expertos
 	.formulario {
 		width: 100%;
 	}
+	.section-contactanos img {
+		min-width: auto;
+	}
+
 	i {
 		width: 100%;
 	}
