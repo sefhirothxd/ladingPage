@@ -170,11 +170,11 @@ css de por que expertos
 */
 
 .section-expertos {
-	background-color: rgba(99, 155, 198, 0.459);
-	padding: 20px 0 20px 0;
+	background-color: #fff;
+	padding: 20px 0 0px 0;
 }
 .text-expertos {
-	color: #fff;
+	color: #81aed1;
 	/* font-size: 15px; */
 	font-weight: normal;
 	text-align: center;
@@ -187,31 +187,66 @@ css de por que expertos
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	column-gap: 109px;
+	column-gap: 18px;
 }
 .card-exp {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	color: #fff;
-	background: linear-gradient(rgba(78, 78, 78, 0.11), rgba(255, 255, 255, 0));
-	padding: 30px;
-	border-radius: 10px;
+	background: #81aed1;
+	padding: 0;
+	border-radius: 10px 10px 0 0;
+	max-width: 243px;
+	max-height: 170px;
+	width: 100%;
+	height: 150px;
 }
-.card-exp img {
-	width: 44px;
-	height: 32px;
-	margin-bottom: 20px;
+.card-exp-descative {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #81aed1;
+	background: #fff;
+	padding: 0;
+	border-radius: 10px 10px 0 0;
+	max-width: 243px;
+	max-height: 170px;
+	width: 100%;
+	height: 150px;
+}
+.card-exp .svg-icon {
+	width: 60px;
+	height: auto;
+	margin-bottom: 10px;
+	fill: #fff;
+}
+.card-exp-descative svg {
+	width: 60px;
+	height: auto;
+	margin-bottom: 10px;
+	fill: #81aed1;
+}
+.subtitle-card {
+	font-size: 20px;
+	font-weight: 700;
+	height: auto;
+}
+.subtitle-card-active {
+	font-size: 20px;
+	font-weight: 700;
+	height: auto;
+	color: #fff;
 }
 /* 
-
 contactanos section
 
 */
 
 .section-contactanos {
-	background: #81aed1;
-	padding: 140px 20px;
+	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -221,6 +256,16 @@ contactanos section
 	width: 100%;
 	max-width: 526px;
 	object-fit: cover;
+}
+.container-contactanos {
+	width: 80%;
+	background: #81aed1;
+	padding: 140px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 100px;
+	border-radius: 40px;
 }
 
 .container-text-contactanos {
@@ -275,12 +320,14 @@ protafolio section
 	width: 100%;
 	max-width: 1440px;
 	box-sizing: border-box;
+	gap: 20px;
 }
 .img-portafolio {
 	max-width: 378px;
 	height: 348px;
 	width: 100%;
 	object-fit: cover;
+	border-radius: 20px;
 }
 
 /* Footer */
