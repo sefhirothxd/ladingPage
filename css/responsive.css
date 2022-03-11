@@ -105,6 +105,10 @@ repsosive  section expertos
 	.title-header {
 		font-size: 25px;
 	}
+	.container-url ul {
+		flex-direction: column;
+		row-gap: 30px;
+	}
 	.splide__arrows {
 		display: none;
 	}
