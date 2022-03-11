@@ -3,6 +3,9 @@ const $nombres = document.querySelector('#nombres');
 const $telefono = document.querySelector('#telefono');
 const $correo = document.querySelector('#correo');
 const $mensaje = document.querySelector('#mensaje');
+const $containerSlider = document.querySelector('.containeer-slider');
+const nextSlider = document.querySelector('.splide__arrow--prev');
+const prevSlider = document.querySelector('.splide__arrow--next');
 
 // botones expert
 const $btn1 = document.querySelector('.btn-expert-1');
@@ -42,26 +45,6 @@ $btn1.addEventListener('click', () => {
 	$btn2.classList.remove('card-exp');
 	$btn3.classList.remove('card-exp');
 	$btn4.classList.remove('card-exp');
-
-	$containerContacto.innerHTML = `
-	<div class="container-contactanos">			
-	<img
-		src="./img/foto7.png"
-		alt="foto pc"
-	/>
-	<div class="container-text-contactanos">
-		<h2>Lorem Ipsum</h2>
-		<p>
-			Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-			archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-			de las industrias desde el año 1500, cuando un impresor persona que
-			de textos y los mezcló de tal manera que logró hacer un libro de
-			textos especimen.
-		</p>
-		<button class="btn-contactanos">Contàctanos</button>
-	</div>
-</div>
-	`;
 });
 $btn2.addEventListener('click', () => {
 	$btn1.classList.add('card-exp-descative');
@@ -73,25 +56,6 @@ $btn2.addEventListener('click', () => {
 	$btn2.classList.remove('card-exp-descative');
 	$btn3.classList.remove('card-exp');
 	$btn4.classList.remove('card-exp');
-	$containerContacto.innerHTML = `
-	<div class="container-contactanos">			
-					<img
-						src="./img/foto2.png"
-						alt="foto pc"
-					/>
-					<div class="container-text-contactanos">
-						<h2>Lorem Ipsum</h2>
-						<p>
-							Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-							archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-							de las industrias desde el año 1500, cuando un impresor persona que
-							de textos y los mezcló de tal manera que logró hacer un libro de
-							textos especimen.
-						</p>
-						<button class="btn-contactanos">Contàctanos</button>
-					</div>
-				</div>
-	`;
 });
 $btn3.addEventListener('click', () => {
 	$btn1.classList.add('card-exp-descative');
@@ -103,25 +67,6 @@ $btn3.addEventListener('click', () => {
 	$btn2.classList.remove('card-exp');
 	$btn3.classList.remove('card-exp-descative');
 	$btn4.classList.remove('card-exp');
-	$containerContacto.innerHTML = `
-	<div class="container-contactanos">			
-					<img
-						src="./img/foto3.png"
-						alt="foto pc"
-					/>
-					<div class="container-text-contactanos">
-						<h2>Lorem Ipsum</h2>
-						<p>
-							Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-							archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-							de las industrias desde el año 1500, cuando un impresor persona que
-							de textos y los mezcló de tal manera que logró hacer un libro de
-							textos especimen.
-						</p>
-						<button class="btn-contactanos">Contàctanos</button>
-					</div>
-				</div>
-	`;
 });
 $btn4.addEventListener('click', () => {
 	$btn1.classList.add('card-exp-descative');
@@ -133,23 +78,4 @@ $btn4.addEventListener('click', () => {
 	$btn2.classList.remove('card-exp');
 	$btn3.classList.remove('card-exp');
 	$btn4.classList.remove('card-exp-descative');
-	$containerContacto.innerHTML = `
-	<div class="container-contactanos">			
-					<img
-						src="./img/foto4.png"
-						alt="foto pc"
-					/>
-					<div class="container-text-contactanos">
-						<h2>Lorem Ipsum</h2>
-						<p>
-							Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-							archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
-							de las industrias desde el año 1500, cuando un impresor persona que
-							de textos y los mezcló de tal manera que logró hacer un libro de
-							textos especimen.
-						</p>
-						<button class="btn-contactanos">Contàctanos</button>
-					</div>
-				</div>
-	`;
 });
