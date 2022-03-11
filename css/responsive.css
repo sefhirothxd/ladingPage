@@ -8,10 +8,15 @@ repsosive  section expertos
 	.texto-banner p {
 		font-size: 30px;
 	}
+
+	.container-contactanos {
+		border-radius: 0px 0px 20px 20px;
+	}
+
 	.section-contactanos {
 		column-gap: 50px;
 	}
-	/* .section-contactanos img {
+	/* .formulario {
 		min-width: 325px;
 	} */
 
@@ -35,7 +40,15 @@ repsosive  section expertos
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 824px) {
+	.title-header {
+		font-size: 30px;
+	}
+	.container-text-contactanos .btn-comprar {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
 	.banner {
 		flex-direction: column;
 		align-items: center;
@@ -80,11 +93,37 @@ repsosive  section expertos
 	.footer-icon-link {
 		width: 60%;
 	}
+	.container-cards svg {
+		width: 40px;
+	}
+	.container-cards .svg-icon {
+		width: 40px;
+	}
 }
 
 @media (max-width: 480px) {
+	.title-header {
+		font-size: 25px;
+	}
+	.splide__arrows {
+		display: none;
+	}
 	.texto-banner {
 		width: 100%;
+	}
+	.group-btn-banner {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: end;
+		column-gap: 10px;
+	}
+	.splide2 .splide__pagination {
+		display: none !important;
+	}
+	.btn-banner-second {
+		margin-left: 0;
+		margin-top: 20px;
 	}
 	.container-formulario {
 		display: flex;
@@ -115,6 +154,10 @@ repsosive  section expertos
 	.container-text-contactanos .btn-contactanos {
 		margin-top: 30px;
 	}
+	.container-text-contactanos .btn-comprar {
+		margin-left: 0;
+		margin-top: 20px;
+	}
 
 	.container-portafolio-img {
 		padding: 0 20px;
@@ -140,8 +183,5 @@ repsosive  section expertos
 	}
 	.card-exp .svg-icon {
 		width: 30px;
-	}
-	.btn-expert-4 svg {
-		padding-top: 5px;
 	}
 }
