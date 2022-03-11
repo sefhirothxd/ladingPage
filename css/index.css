@@ -180,7 +180,7 @@ css de por que expertos
 	text-align: center;
 	margin-bottom: 30px;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 35px;
 }
 .container-cards {
 	display: flex;
@@ -229,6 +229,13 @@ css de por que expertos
 	margin-bottom: 10px;
 	fill: #81aed1;
 }
+.btn-expert-4 svg {
+	padding-top: 5px;
+}
+.btn-expert-4 p {
+	padding-top: 8px;
+}
+
 .subtitle-card {
 	font-size: 20px;
 	font-weight: 700;
@@ -246,26 +253,40 @@ contactanos section
 */
 
 .section-contactanos {
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	column-gap: 100px;
-}
-.section-contactanos img {
 	width: 100%;
-	max-width: 526px;
-	object-fit: cover;
+	overflow: hidden;
+}
+.probando {
+	width: 100%;
+	width: 150em;
+	background-color: lightblue;
+	/* transform: translateX(240px); */
+	overflow: auto;
+	margin: 0 auto;
+}
+.containeer-slider {
+	width: 100%;
+	height: 100%;
 }
 .container-contactanos {
-	width: 80%;
-	background: #81aed1;
-	padding: 140px 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 100px;
-	border-radius: 40px;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	border-radius: 30px;
+	padding: 100px 0;
+	background: #81aed1;
+	color: #fff;
+	column-gap: 20px;
+}
+
+.container-contactanos img {
+	/* margin-right: 15px; */
+	width: 100%;
+	min-width: 150px;
+	max-width: 350px;
 }
 
 .container-text-contactanos {
@@ -275,20 +296,27 @@ contactanos section
 }
 
 .container-text-contactanos h2 {
-	font-size: 15px;
-	font-weight: normal;
-	margin-bottom: 49px;
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 29px;
 }
 
 .container-text-contactanos .btn-contactanos {
-	background: #639bc6;
+	background: #81aed1;
+	border-radius: 10px;
+	border: 3px solid #00345c;
 	color: #fff;
-	border: none;
+	/* border: none; */
 	padding: 10px 30px;
-	margin-top: 63px;
-	font-size: 14px;
+	margin-top: 39px;
+	font-size: 16px;
 	cursor: pointer;
 	outline: none;
+}
+.container-text-contactanos .btn-comprar {
+	background: #00345c;
+	margin-left: 15px;
+	padding: 10px 40px;
 }
 
 /* 
@@ -308,9 +336,9 @@ protafolio section
 	/* font-size: 15px; */
 	font-weight: normal;
 	margin-bottom: 30px;
-	color: #000;
+	color: #81aed1;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 35px;
 }
 .container-portafolio-img {
 	display: flex;
