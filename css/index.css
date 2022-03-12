@@ -84,6 +84,23 @@ li a:hover {
 	/* right: 0 !important; */
 	bottom: -140% !important;
 }
+
+.splide2 .splide__arrows {
+	position: absolute;
+	left: -6% !important;
+	/* right: 0 !important; */
+	bottom: -50% !important;
+	justify-content: space-between !important;
+	/* transform: translate(5%) !important; */
+	top: 85% !important;
+}
+.splide2 .splide__arrow--next {
+	top: 75% !important;
+}
+/*
+.splide2 .splide__arrow--prev {
+	top: -10em !important;
+} */
 .splide2 img {
 	width: 100%;
 	min-width: 150px;

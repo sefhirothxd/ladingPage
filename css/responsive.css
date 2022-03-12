@@ -38,6 +38,18 @@ repsosive  section expertos
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 	}
+	.splide2 .splide__arrows {
+		position: absolute;
+		left: -6% !important;
+		/* right: 0 !important; */
+		bottom: -50% !important;
+		justify-content: space-between !important;
+		/* transform: translate(5%) !important; */
+		top: 70% !important;
+	}
+	.splide2 .splide__arrow--next {
+		top: 90% !important;
+	}
 }
 
 @media (max-width: 824px) {
@@ -98,6 +110,9 @@ repsosive  section expertos
 	}
 	.container-cards .svg-icon {
 		width: 40px;
+	}
+	.splide__arrows {
+		display: none;
 	}
 }
 
