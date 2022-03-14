@@ -203,4 +203,18 @@ repsosive  section expertos
 	.card-exp .svg-icon {
 		width: 30px;
 	}
+
+	.article-portafolio {
+		position: absolute;
+		top: 67%;
+		left: 25px;
+	}
+	.article-portafolio h3 {
+		font-size: 20px;
+	}
+	.article-portafolio p {
+		font-size: 15px;
+		width: 100%;
+		max-width: none;
+	}
 }
