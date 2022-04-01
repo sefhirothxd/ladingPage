@@ -50,6 +50,25 @@ repsosive  section expertos
 	.splide2 .splide__arrow--next {
 		top: 90% !important;
 	}
+
+	.footer {
+		padding: 50px 0 20px 0;
+	}
+	.container-footer {
+		flex-direction: column;
+	}
+	.footer-icon-link {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.container-footer > div {
+		margin-bottom: 20px;
+	}
+	.footer-icon-link ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 }
 
 @media (max-width: 824px) {
