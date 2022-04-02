@@ -20,11 +20,19 @@ repsosive  section expertos
 		min-width: 325px;
 	} */
 
-	.container-cards {
-		overflow-x: auto;
-		column-gap: 30px;
-		justify-content: center;
+
+	.btn-comprar-card{
+		width:100%;
+		max-width: 160px;
 	}
+	.estrella{
+		right: 2rem;
+	}
+	.estrella > img{
+		width: 3rem;
+	}
+
+
 	.container-cards::-webkit-scrollbar {
 		width: 12px;
 	}
@@ -71,6 +79,16 @@ repsosive  section expertos
 	}
 }
 
+@media (max-width: 1024px) {
+	.container-cards {
+	flex-flow: column wrap;
+	row-gap: 1rem;
+	column-gap: 0rem;
+	}
+	.card-precio-medio{
+		transform: none;
+	}
+}
 @media (max-width: 824px) {
 	.title-header {
 		font-size: 30px;
