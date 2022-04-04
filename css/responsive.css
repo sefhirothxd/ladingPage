@@ -197,6 +197,9 @@ repsosive  section expertos
 		width: 90%;
 		padding-left: 0px;
 	}
+	.section-expertos {
+    padding: 50px 0 0px 0;
+}
 	.container-text-contactanos {
 		/* min-width: auto; */
 		/* width: 30%; */
@@ -229,7 +232,10 @@ repsosive  section expertos
 	}
 	.container-cards {
 		/* width: 30px; */
-		column-gap: 10px;
+		column-gap: 0;
+		padding: 0 20px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	.container-cards svg {
 		width: 30px;

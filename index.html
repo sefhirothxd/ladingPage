@@ -51,13 +51,13 @@
 					<div class="container-url">
 						<ul class="container-url-links">
 							<li><a href="mailto:Hola@skillien.com"><i class="fa-light fa-envelope"></i> hola@skillien.com</a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a></li>
+							<li><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a></li>
 						</ul>
 					</div>
 				</header>
 				<section class="banner" id="">
 					<article class="texto-banner">
-						<div class="splide2">
+						<!-- <div class="splide2">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
@@ -72,14 +72,14 @@
 									
 								</ul>
 							</div>
-						</div>
+						</div> -->
 						<p>
-							Ipsum simplemente <i>relleno imprentas</i>
+							Digitaliza tu negocio con nosotros
 						</p>
-						<span>Lorem ipsum es un texto para rellenar</span>
+						<span>Incrementa tus ventas hasta 10x con paginas webs efectivas</span>
 						<div class="group-btn-banner">
-							<button class="btn-contactanos btn-banner-first">Ver detalle</button>
-							<button class="btn-contactanos btn-banner-second btn-comprar">Comprar</button>
+							<a class="btn-contactanos btn-banner-first" href="#price" >Ver detalle</a>
+							<a class="btn-contactanos btn-banner-second btn-comprar" href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20deseo%20comprar%20una%20pagina%2C%20dame%20mayor%20informaci%C3%B3n%20sobre...">Comprar</a>
 						</div>
 						<!-- <div class="container-btn">
 							<a href="">Contactar</a>
@@ -87,7 +87,7 @@
 					</article>
 					<div class="container-formulario">
 						<form class="formulario" action="">
-							<h2 class="form-title">Contactanos</h2>
+							<h2 class="form-title">Cotiza con nosotros</h2>
 							<input
 								class="form-input"
 								type="text"
@@ -121,7 +121,7 @@
 					</div>
 				</section>
 			</div>
-			<section class="section-expertos">
+			<section class="section-expertos" id="price">
 				<h2 class="text-expertos">Nuestros Planes</h2>
 				<div class="container-cards">
 					<div class="card-precio">
@@ -400,22 +400,22 @@
 				<div class="footer-icon-link">
 					<!-- ul -->
 					<ul>
-						<li>
+						<!-- <li>
 							<a class="footer-ancla" href="#">
 								<h3>Visitanos:</h3>
 								<div class="footer-ancla-icon">
-									<img src="img/icon-dire.svg"direccion" />
+									<img src="img/icon-dire.svg"direccion" /> 
 									<p>Av. Caminos del Inca 1325, Surco, Lima
 								</div>
 								</p>
 							</a>
-						</li>
+						</li> -->
 						<li>
 							<a class="footer-ancla"  href="#">
 								<h3>Hablemos:</h3>
 								<div class="footer-ancla-icon">
-									<img src="img/icon-tel.svg" alt="telefono" />
-									<p>990 000 000
+									<!-- <img src="img/icon-tel.svg" alt="telefono" /> -->
+									<p>+51 977 832 615
 								</div>
 								</p>
 							</a>
@@ -424,17 +424,28 @@
 							<a class="footer-ancla"  href="#">
 								<h3>Escribenos:</h3>
 								<div class="footer-ancla-icon">
-									<img src="img/icon-correo.svg" alt="correo" />
-									<p>info@Fake.pe</p>
+									<!-- <img src="img/icon-correo.svg" alt="correo" /> -->
+									<p>Hola@skillien.com</p>
 								</div>
 							</a>
 						</li>
 				</div>
 			</div>
+			<hr style="
+				height: 1px;
+				width: 100%;
+				background-color: rgb(255, 255, 255);
+				border: none
+			">
 			<div class="container-footer-second">
 				<div class="container-footer-social">
+					<div class="container-heart">
+						<a href="#">
+						</a>
+						<p>Hecho con <i class="fa-solid fa-heart" style="font-size: 15px;"></i> por skillien</p>
+					</div>
 					<div>
-						<h3>siguenos en nuestras redes</h3>
+						<h3>Síguenos:</h3>
 						<div>
 							<a href="#">
 								<i class="fa-brands fa-facebook-f"></i>
@@ -447,18 +458,13 @@
 							</a>
 						</div>
 					</div>
-					<div class="container-book">
+					<!-- <div class="container-book">
 						<a href="#">
 							<i class="fa-solid fa-book-open"></i>
 						</a>
 						<p>Libro de reclamaciones</p>
-					</div>
-					<div class="container-heart">
-						<a href="#">
-							<i class="fa-solid fa-heart" style="font-size: 20px;"></i>
-						</a>
-						<p>Hecho con amor por el team skillien</p>
-					</div>
+					</div> -->
+					
 				</div>
 			</div>
 		</footer>
