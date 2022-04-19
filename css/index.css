@@ -309,7 +309,12 @@ css de por que expertos
   justify-content: center;
   /* position: relative; */
   margin-top: 2rem;
-  margin-bottom: 2.9rem;
+  /* margin-bottom: 2rem; */
+}
+.card-precio__container-money-price-after{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-decoration: line-through;
 }
 .card-precio__container-money p {
   position: relative;
@@ -321,6 +326,11 @@ css de por que expertos
   left: -3rem;
   top: -1rem;
   /* font-weight: 700; */
+}
+
+.card-precio__container{
+
+  text-align: center;
 }
 
 .card-precio__container-list {
@@ -486,6 +496,7 @@ contactanos section
   width: 100%;
   border-radius: 30px;
 	transition: 0.5s;
+  overflow: hidden;
 }
 .portafolio-img:hover {
   transform: scale(1.03);
@@ -521,8 +532,14 @@ contactanos section
   max-width: 378px;
   height: 348px;
   width: 100%;
+object-position: top;
   object-fit: cover;
   border-radius: 20px;
+  transition: 0.5s ease;
+}
+.img-portafolio:hover {
+  transform: scale(1.2);
+  vertical-align: top;
 }
 
 /* Footer */
