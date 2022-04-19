@@ -266,8 +266,12 @@ css de por que expertos
   max-width: 40rem;
   transition: 0.5s;
 }
-.card-precio:hover {
-  transform: scale(1.06);
+.card-precio:nth-child(odd):hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+.card-precio:nth-child(even):hover {
+  transform: scale(1.1);
   transition: 0.5s;
 }
 .card-precio-medio {
