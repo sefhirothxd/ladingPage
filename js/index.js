@@ -35,47 +35,47 @@ $form.addEventListener('submit', async (e) => {
 	}
 });
 
-$btn1.addEventListener('click', () => {
-	$btn1.classList.add('card-exp');
-	$btn2.classList.add('card-exp-descative');
-	$btn3.classList.add('card-exp-descative');
-	$btn4.classList.add('card-exp-descative');
+// $btn1.addEventListener('click', () => {
+// 	$btn1.classList.add('card-exp');
+// 	$btn2.classList.add('card-exp-descative');
+// 	$btn3.classList.add('card-exp-descative');
+// 	$btn4.classList.add('card-exp-descative');
 
-	$btn1.classList.remove('card-exp-descative');
-	$btn2.classList.remove('card-exp');
-	$btn3.classList.remove('card-exp');
-	$btn4.classList.remove('card-exp');
-});
-$btn2.addEventListener('click', () => {
-	$btn1.classList.add('card-exp-descative');
-	$btn2.classList.add('card-exp');
-	$btn3.classList.add('card-exp-descative');
-	$btn4.classList.add('card-exp-descative');
+// 	$btn1.classList.remove('card-exp-descative');
+// 	$btn2.classList.remove('card-exp');
+// 	$btn3.classList.remove('card-exp');
+// 	$btn4.classList.remove('card-exp');
+// });
+// $btn2.addEventListener('click', () => {
+// 	$btn1.classList.add('card-exp-descative');
+// 	$btn2.classList.add('card-exp');
+// 	$btn3.classList.add('card-exp-descative');
+// 	$btn4.classList.add('card-exp-descative');
 
-	$btn1.classList.remove('card-exp');
-	$btn2.classList.remove('card-exp-descative');
-	$btn3.classList.remove('card-exp');
-	$btn4.classList.remove('card-exp');
-});
-$btn3.addEventListener('click', () => {
-	$btn1.classList.add('card-exp-descative');
-	$btn2.classList.add('card-exp-descative');
-	$btn3.classList.add('card-exp');
-	$btn4.classList.add('card-exp-descative');
+// 	$btn1.classList.remove('card-exp');
+// 	$btn2.classList.remove('card-exp-descative');
+// 	$btn3.classList.remove('card-exp');
+// 	$btn4.classList.remove('card-exp');
+// });
+// $btn3.addEventListener('click', () => {
+// 	$btn1.classList.add('card-exp-descative');
+// 	$btn2.classList.add('card-exp-descative');
+// 	$btn3.classList.add('card-exp');
+// 	$btn4.classList.add('card-exp-descative');
 
-	$btn1.classList.remove('card-exp');
-	$btn2.classList.remove('card-exp');
-	$btn3.classList.remove('card-exp-descative');
-	$btn4.classList.remove('card-exp');
-});
-$btn4.addEventListener('click', () => {
-	$btn1.classList.add('card-exp-descative');
-	$btn2.classList.add('card-exp-descative');
-	$btn3.classList.add('card-exp-descative');
-	$btn4.classList.add('card-exp');
+// 	$btn1.classList.remove('card-exp');
+// 	$btn2.classList.remove('card-exp');
+// 	$btn3.classList.remove('card-exp-descative');
+// 	$btn4.classList.remove('card-exp');
+// });
+// $btn4.addEventListener('click', () => {
+// 	$btn1.classList.add('card-exp-descative');
+// 	$btn2.classList.add('card-exp-descative');
+// 	$btn3.classList.add('card-exp-descative');
+// 	$btn4.classList.add('card-exp');
 
-	$btn1.classList.remove('card-exp');
-	$btn2.classList.remove('card-exp');
-	$btn3.classList.remove('card-exp');
-	$btn4.classList.remove('card-exp-descative');
-});
+// 	$btn1.classList.remove('card-exp');
+// 	$btn2.classList.remove('card-exp');
+// 	$btn3.classList.remove('card-exp');
+// 	$btn4.classList.remove('card-exp-descative');
+// });

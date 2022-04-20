@@ -74,10 +74,20 @@ header {
   transition: 0.5s;
 }
 .container-probando {
-  background: #0e1b3b;
+  position: relative;
+  background: transparent;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+#banner-video{
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  object-fit: contain;
+  min-width: 100vw;
+  min-height: 100%; 
+  z-index: -1;
 }
 .banner {
   display: flex;
@@ -131,18 +141,15 @@ header {
   justify-content: center;
   padding-bottom: 50px;
   color: #fff;
+  
 }
 .texto-banner p {
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 15px;
-
-  /* background: linear-gradient(to bottom right, red, yellow);
-	background: -webkit-linear-gradient(left top, blue, yellow);
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent;   */
 }
+
 .group-btn-banner{
   padding: 40px 0;
 }
