@@ -267,11 +267,22 @@ css de por que expertos
   color: #fff;
   padding-top: 3.4rem;
   border-radius: 39px;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* margin: 0 auto; */
   width: 100%;
   max-width: 40rem;
   transition: 0.5s;
+}
+.container-card-precio__container-list{
+  display: flex;
+  justify-content:space-between;
+  flex-direction:column;
+  height: 61rem;
+  background: #003a84;
+}
+
+.card-basic {
+  min-height: 76rem;
 }
 .card-precio:nth-child(odd):hover {
   transform: scale(1.04);
