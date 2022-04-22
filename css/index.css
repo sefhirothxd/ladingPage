@@ -80,13 +80,13 @@ header {
   background-size: cover;
   background-position: center;
 }
-#banner-video{
+#banner-video {
   position: absolute;
   right: 0;
   bottom: 50px;
   object-fit: contain;
   min-width: 100vw;
-  min-height: 100%; 
+  min-height: 100%;
   z-index: -1;
 }
 .banner {
@@ -141,7 +141,6 @@ header {
   justify-content: center;
   padding-bottom: 50px;
   color: #fff;
-  
 }
 .texto-banner p {
   font-size: 50px;
@@ -150,7 +149,7 @@ header {
   margin-bottom: 15px;
 }
 
-.group-btn-banner{
+.group-btn-banner {
   padding: 40px 0;
 }
 .formulario {
@@ -160,7 +159,9 @@ header {
   width: 300px;
   padding: 30px 40px;
   max-width: 730px;
-  background: #639bc6;
+  /* background: #639bc6; */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -273,10 +274,10 @@ css de por que expertos
   max-width: 40rem;
   transition: 0.5s;
 }
-.container-card-precio__container-list{
+.container-card-precio__container-list {
   display: flex;
-  justify-content:space-between;
-  flex-direction:column;
+  justify-content: space-between;
+  flex-direction: column;
   height: 61rem;
   background: #003a84;
 }
@@ -329,7 +330,7 @@ css de por que expertos
   margin-top: 2rem;
   /* margin-bottom: 2rem; */
 }
-.card-precio__container-money-price-after{
+.card-precio__container-money-price-after {
   margin-bottom: 2rem;
   margin-top: 1rem;
   text-decoration: line-through;
@@ -346,8 +347,7 @@ css de por que expertos
   /* font-weight: 700; */
 }
 
-.card-precio__container{
-
+.card-precio__container {
   text-align: center;
 }
 
@@ -508,12 +508,12 @@ contactanos section
 }
 .portafolio-img {
   position: relative;
-  background: #639bc6;
+  /* background: #639bc6; */
   max-width: 378px;
   height: 348px;
   width: 100%;
   border-radius: 30px;
-	transition: 0.5s;
+  transition: 0.5s;
   overflow: hidden;
 }
 .portafolio-img:hover {
@@ -523,7 +523,7 @@ contactanos section
 .portafolio-img img {
   width: 100%;
   display: block;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
   object-fit: cover;
   height: 100%;
 }
@@ -550,7 +550,7 @@ contactanos section
   max-width: 378px;
   height: 348px;
   width: 100%;
-object-position: top;
+  object-position: top;
   object-fit: cover;
   border-radius: 20px;
   transition: 0.5s ease;

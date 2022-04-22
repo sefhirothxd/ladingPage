@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/barra.css" />
 		<link rel="stylesheet" href="css/splide.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body>
 		<!-- btn-whatsapp -->
@@ -172,9 +173,9 @@
 						</div>
 					</div>
 					<div class="card-precio card-precio-medio">
-						<div class="estrella">
+						<!-- <div class="estrella">
 							<img src="./img/estrella.svg" alt="estrella">
-						</div>
+						</div> -->
 						<div class="card-precio__container">
 							<h3 class="card-precio__container-title">Plan Emprendedor</h3>
 							<div class="card-precio__container-money">
@@ -326,13 +327,14 @@
 			<section class="section-portafolio">
 				<h2 class="">Portafolio</h2>
 				<div class="container-portafolio-img">
-					<a href="https://kitoperu.com/" target="_blank" class="portafolio-img">
+					<a href="https://kitoperu.com/" target="_blank" class="portafolio-img" style="position: relative;">
+						<div style="background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));width: 100%; height: 350px;position: absolute; z-index: 2;"></div>
 						<img
 							class="img-portafolio"
 							src="./img/KITOPERU.webp"
 							alt=""
 						/>
-						<article class="article-portafolio">
+						<article class="article-portafolio" style="z-index: 2;">
 							<h3>Kito Peru</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus risus nisl risus, et dolor. Tincid</p>
 						</article>
