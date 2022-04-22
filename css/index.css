@@ -160,7 +160,8 @@ header {
   width: 300px;
   padding: 30px 40px;
   max-width: 730px;
-  background: #639bc6;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -388,6 +389,11 @@ css de por que expertos
   font-size: 2rem;
   font-weight: 500;
   border-radius: 1rem;
+  text-align: center;
+}
+.btn-comprar-card:hover {
+  background: #639bc6;
+  transition: 1s;
 }
 /* .card-precio-medio .card-precio__container-list .btn-comprar-card{
 	margin-bottom: 0rem;
@@ -520,7 +526,7 @@ contactanos section
   transform: scale(1.03);
   transition: 0.5s;
 }
-.portafolio-img img {
+.portafolio-img img:hover {
   width: 100%;
   display: block;
   filter: brightness(50%);
@@ -531,7 +537,12 @@ contactanos section
   position: absolute;
   top: 67%;
   left: 30px;
+  opacity: 0;
 }
+.portafolio-img:hover .article-portafolio{
+  opacity: 1;
+}
+
 .article-portafolio h3 {
   color: #fff;
   font-size: 25px;
