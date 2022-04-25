@@ -221,9 +221,9 @@ repsosive  section expertos
 	.container-portafolio-img {
 		padding: 0 20px;
 	}
-	.img-portafolio {
-		height: auto;
-	}
+	/* .img-portafolio {
+		
+	} */
 	.footer-contact {
 		width: 100%;
 	}

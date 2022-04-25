@@ -89,6 +89,19 @@ header {
   min-height: 100%; 
   z-index: -1;
 }
+.container-canva{
+  position: relative;
+}
+#c{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  object-fit: contain;
+  width: 100%;
+  /* min-height: 100%;  */
+  z-index: -1;
+  overflow: hidden;
+}
 .banner {
   display: flex;
   width: 100%;
