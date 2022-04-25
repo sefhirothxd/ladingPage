@@ -119,8 +119,8 @@ function init() {
 
 	//
 
-	stats = new Stats();
-	container.appendChild(stats.dom);
+	// stats = new Stats();
+	// container.appendChild(stats.dom);
 
 	//
 
@@ -132,7 +132,7 @@ function animate() {
 	requestAnimationFrame(animate);
 
 	render();
-	stats.update();
+	// stats.update();
 }
 
 function render() {
