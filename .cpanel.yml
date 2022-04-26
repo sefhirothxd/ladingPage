@@ -2,6 +2,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/skillien/public_html/
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp probando.html $DEPLOYPATH
     - /bin/cp .gitignore $DEPLOYPATH
     - /bin/cp google8197e8c1d7748239.html $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
