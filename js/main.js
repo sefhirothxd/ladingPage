@@ -1,5 +1,5 @@
 import * as THREE from './three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.108.0/examples/jsm/controls/OrbitControls.js';
+// import { OrbitControls } from 'https://unpkg.com/three@0.108.0/examples/jsm/controls/OrbitControls.js';
 
 import Stats from './stats.module.js';
 
@@ -29,7 +29,7 @@ function init() {
 	camera = new THREE.PerspectiveCamera(50, 0.5 * aspect, 1, 10000);
 	camera.position.z = 2500;
 
-	cameraPerspective = new THREE.PerspectiveCamera(50, 0.5 * aspect, 150, 1000);
+	cameraPerspective = new THREE.PerspectiveCamera(150, 0.5 * aspect, 150, 1000);
 
 	cameraPerspectiveHelper = new THREE.CameraHelper(cameraPerspective);
 	scene.add(cameraPerspectiveHelper);
@@ -65,33 +65,39 @@ function init() {
 	scene.add(cameraRig);
 
 	//
-
+	const loader = new THREE.TextureLoader();
 	mesh = new THREE.Mesh(
-		new THREE.SphereGeometry(100, 16, 8),
-		new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true })
+		new THREE.SphereGeometry(50, 32, 16),
+		// new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true }),
+		new THREE.MeshBasicMaterial({
+			map: loader.load('../img/texture2.webp'),
+		})
 	);
 	scene.add(mesh);
 
 	const mesh2 = new THREE.Mesh(
-		new THREE.SphereGeometry(50, 16, 8),
-		new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
+		new THREE.SphereGeometry(15, 16, 8),
+		// new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
+		new THREE.MeshBasicMaterial({
+			map: loader.load('../img/moonTexture.jpg'),
+		})
 	);
 	mesh2.position.y = 150;
 	mesh.add(mesh2);
 
-	const mesh3 = new THREE.Mesh(
-		new THREE.SphereGeometry(5, 16, 8),
-		new THREE.MeshBasicMaterial({ color: 0x0000ff, wireframe: true })
-	);
-	mesh3.position.z = 150;
-	cameraRig.add(mesh3);
+	// const mesh3 = new THREE.Mesh(
+	// 	new THREE.SphereGeometry(5, 16, 8),
+	// 	new THREE.MeshBasicMaterial({ color: 0x0000ff, wireframe: true })
+	// );
+	// mesh3.position.z = 150;
+	// cameraRig.add(mesh3);
 
 	//
 
 	const geometry = new THREE.BufferGeometry();
 	const vertices = [];
 
-	for (let i = 0; i < 10000; i++) {
+	for (let i = 0; i < 100000; i++) {
 		vertices.push(THREE.MathUtils.randFloatSpread(2000)); // x
 		vertices.push(THREE.MathUtils.randFloatSpread(2000)); // y
 		vertices.push(THREE.MathUtils.randFloatSpread(2000)); // z
@@ -147,7 +153,7 @@ function render() {
 
 	if (activeCamera === cameraPerspective) {
 		cameraPerspective.fov = 35 + 30 * Math.sin(0.5 * r);
-		cameraPerspective.far = mesh.position.length();
+		cameraPerspective.far = 1200;
 		cameraPerspective.updateProjectionMatrix();
 
 		cameraPerspectiveHelper.update();
@@ -170,7 +176,7 @@ function render() {
 
 	activeHelper.visible = false;
 
-	renderer.setViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+	renderer.setViewport(0, 150, SCREEN_WIDTH, SCREEN_HEIGHT);
 	renderer.render(scene, activeCamera);
 
 	activeHelper.visible = true;
