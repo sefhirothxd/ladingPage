@@ -89,8 +89,9 @@ header {
   min-height: 100%; 
   z-index: -1;
 }
-.container-canva{
+.container-canvas{
   position: relative;
+  background: black;
 }
 #c{
   position: absolute;
@@ -156,11 +157,17 @@ header {
   color: #fff;
   
 }
-.texto-banner p {
+.texto-banner h3 {
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 15px;
+}
+.texto-banner span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  /* margin-bottom: 15px; */
 }
 
 .group-btn-banner{
