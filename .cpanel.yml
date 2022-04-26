@@ -4,6 +4,6 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp .gitignore $DEPLOYPATH
     - /bin/cp google8197e8c1d7748239.html $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
