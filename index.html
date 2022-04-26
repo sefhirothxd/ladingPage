@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Skillien</title>
 	<!-- Seo -->
-	<meta name="Description"
-		content="Empresa de desarrollo de software a la vanguardia de las últimas tecnologías, especialistas en sitios web, aplicaciones web, diseño, soporte y mantenimiento web.">
+	<meta name="description" content="Empresa de desarrollo de software a la vanguardia de las últimas tecnologías, especialistas en sitios web, aplicaciones web, diseño, soporte y mantenimiento web.">
 	<meta name="ROBOTS" content="ALL">
 
 	<meta name="geo.region" content="PE-LIM" />
@@ -31,12 +30,13 @@
 					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-MSF2D5K');</script>
 	<!-- End Google Tag Manager -->
+	<link rel="preload" href="./js/three.module.js" as="script" type="script">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/whatsapp.css" />
 	<link rel="stylesheet" href="css/barra.css" />
-	<link rel="stylesheet" href="css/splide.min.css" />
+	<!-- <link rel="stylesheet" href="css/splide.min.css" /> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,37 +64,37 @@
 				<rect y="25.509" width="41" height="5.49" rx="2.745" fill="white"/>
 				</svg>				
 		</div> -->
-	<main>
-		<video autoplay muted loop id="banner-video">
-			<source src="./img/newworld.m4v" type="video/mp4">
-		</video>
-		<div class="container-probando">
-			<header>
-				<div>
-					<a href="index.html">
-						<h1 class="title-header" style="font-weight: bold;">SKILLIEN</h1>
-					</a>
+		<main>
+			<!-- <video autoplay muted loop id="banner-video">
+				<source src="./img/newworld.m4v" type="video/mp4">
+			</video> -->
+			<div class="container-probando">
+				<div container="container-canvas">
+					<canvas id="c"></canvas>
 				</div>
-				<div class="container-url">
-					<ul class="container-url-links">
-						<li><a href="mailto:Hola@skillien.com"><i class="fa-light fa-envelope"></i> hola@skillien.com</a></li>
-						<li><a class="btn-whatsapp"
-								href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."><i
-									class="fa-brands fa-whatsapp"></i> +51 977 832 615</a></li>
-					</ul>
-				</div>
-			</header>
-			<section class="banner" id="">
-				<article class="texto-banner">
-					<p>
-						Digitaliza tu negocio con nosotros
-					</p>
-					<span>Incrementa tus ventas hasta 10x con un sitio web efectivas</span>
-					<div class="group-btn-banner">
-						<!-- <a class="btn-contactanos btn-banner-first" href="#price" >Ver detalle</a> -->
-						<a class="btn-contactanos btn-banner-second btn-comprar"
-							href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20deseo%20comprar%20una%20pagina%2C%20dame%20mayor%20informaci%C3%B3n%20sobre...">Comprar</a>
+				<header>
+					<div>
+						<a href="index.html">
+							<h1 class="title-header" style="font-weight: bold;">SKILLIEN</h1>
+						</a>
 					</div>
+					<div class="container-url">
+						<ul class="container-url-links">
+							<li><a href="mailto:Hola@skillien.com"><i class="fa-light fa-envelope"></i> hola@skillien.com</a></li>
+							<li><a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a></li>
+						</ul>
+					</div>
+				</header>
+				<section class="banner" id="">
+					<article class="texto-banner">
+						<p>
+							Digitaliza tu negocio con nosotros
+						</p>
+						<span>Incrementa tus ventas hasta 10x con un sitio web efectivas</span>
+						<div class="group-btn-banner">
+							<a class="btn-contactanos btn-banner-first" href="#price" >Ver detalle</a>
+							<a class="btn-contactanos btn-banner-second btn-comprar" href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20deseo%20comprar%20una%20pagina%2C%20dame%20mayor%20informaci%C3%B3n%20sobre...">Comprar</a>
+						</div>
 				</article>
 				<div class="container-formulario">
 					<form class="formulario" action="">
@@ -334,7 +334,7 @@
 			<div class="container-portafolio-img">
 				<a href="https://kitoperu.com/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="./img/KITOPERU.jpg" alt="" />
+					<img class="img-portafolio" loading="lazy" src="./img/KITOPERU.jpg" alt="" />
 					<article class="article-portafolio">
 						<h3>Kito Peru</h3>
 						<p>Empresa japonesa especializada en ventas de Tecle electricos</p>
@@ -342,7 +342,7 @@
 				</a>
 				<a href="https://rothenbergerperu.com/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="./img/ROTHENBERGERPERU.jpg" alt="" />
+					<img class="img-portafolio" loading="lazy" src="./img/ROTHENBERGERPERU.jpg" alt="" />
 					<article class="article-portafolio">
 						<h3>Rothenberger Peru</h3>
 						<p>Empresa especializada en venta de Tumberias industriales</p>
@@ -350,7 +350,7 @@
 				</a>
 				<a href="https://antichispaherramientas.com/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="./img/X-SPARK.jpg" alt="" />
+					<img class="img-portafolio" loading="lazy" src="./img/X-SPARK.jpg" alt="" />
 					<article class="article-portafolio">
 						<h3>X-Spark</h3>
 						<p>Empresa especializada en distribuir herramientas de seguridad para zona de alto riesgo.</p>
@@ -358,7 +358,7 @@
 				</a>
 				<a href="https://comercym.com/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="./img/COMERCYM.jpg" alt="" />
+					<img class="img-portafolio" loading="lazy" src="./img/COMERCYM.jpg" alt="" />
 					<article class="article-portafolio">
 						<h3>Comercym</h3>
 						<p>Empresa especializada en venta de estructura para el almacenamiento.</p>
@@ -366,7 +366,7 @@
 				</a>
 				<a href="https://torqueperu.com/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="./img/TORQUEPERU.jpg" alt="" />
+					<img class="img-portafolio" loading="lazy" src="./img/TORQUEPERU.jpg" alt="" />
 					<article class="article-portafolio">
 						<h3>Torque Peru</h3>
 						<p>Empresa especializada en ventas de todo tipo de torques.</p>
@@ -374,13 +374,12 @@
 				</a>
 				<a href="https://blockbuster-two.vercel.app/" target="_blank" class="portafolio-img">
 					<div class="portfolio-gradient"></div>
-					<img class="img-portafolio" src="https://bryanvera.vercel.app/blockbuuster.png" alt="" />
+					<img class="img-portafolio" loading="lazy" src="https://bryanvera.vercel.app/blockbuuster.png" alt="" />
 					<article class="article-portafolio">
 						<h3>Block Buster</h3>
 						<p>Pagina web que muestra los puntages recibido cada peliculas.</p>
 					</article>
 				</a>
-
 			</div>
 		</section>
 	</main>
@@ -439,20 +438,14 @@
 						</a>
 					</div>
 				</div>
-				<!-- <div class="container-book">
-						<a href="#">
-							<i class="fa-solid fa-book-open"></i>
-						</a>
-						<p>Libro de reclamaciones</p>
-					</div> -->
 
 			</div>
-		</div>
-	</footer>
-</body>
-<script src="js/index.js"></script>
-<script src="js/splide.min.js"></script>
-<script>
+		</footer>
+	</body>
+	<script type="module" src="./js/main.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/splide.min.js"></script>
+	<script>
 
 
 	let probando = new Splide('.splide2', {
