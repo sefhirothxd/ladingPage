@@ -227,7 +227,7 @@ input::placeholder {
 }
 
 .btn-form {
-  background: #81aed1;
+  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
   color: #fff;
   border: none;
   width: 85%;
@@ -655,7 +655,7 @@ object-position: top;
 /* Footer */
 
 .footer {
-  background: #003a84;
+  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
