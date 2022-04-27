@@ -70,7 +70,7 @@ function init() {
 		new THREE.SphereGeometry(50, 32, 16),
 		// new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true }),
 		new THREE.MeshBasicMaterial({
-			map: loader.load('../img/texture2.webp'),
+			map: loader.load('../img/mapa_new.jpeg'),
 		})
 	);
 	scene.add(mesh);
