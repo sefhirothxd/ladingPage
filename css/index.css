@@ -163,6 +163,28 @@ header {
   line-height: 1.2;
   margin-bottom: 15px;
 }
+.texto-banner-text__verde{
+  background-color: #B5D104;
+  display: inline-block;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.texto-banner-text__verde::before{
+  content: "";
+  width: 1.5rem;
+  height:100%;
+  background-color: #B5D104;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+/* .texto-banner-text__verde::before{
+  content: "";
+  width: 2rem;
+  background-color: #B5D104;
+  display: inline-block;
+} */
 .texto-banner span {
   font-size: 18px;
   font-weight: 500;
@@ -180,17 +202,16 @@ header {
   width: 300px;
   padding: 30px 40px;
   max-width: 730px;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
+  background-color: white;
   border-radius: 10px;
 }
 
 .form-title {
   text-align: center;
-  font-size: 25px;
+  font-size: 3rem;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -198,7 +219,7 @@ header {
   padding: 10px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #8E8E8E;
   margin-bottom: 30px;
   outline: none;
   width: 100%;
@@ -222,7 +243,7 @@ header {
 
 input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
+  color: #8E8E8E;
   opacity: 1; /* Firefox */
 }
 
@@ -233,7 +254,7 @@ input::placeholder {
   width: 85%;
   border-radius: 10px;
   padding: 15px 30px;
-  font-size: 14px;
+  font-size: 2.5rem;
   cursor: pointer;
   outline: none;
 }
@@ -541,8 +562,8 @@ contactanos section
   outline: none;
 }
 .btn-banner-first {
-  border: 3px solid #81aed1;
-  background: #0e1b3b;
+  border: 3px solid white;
+  background:transparent;
 }
 .container-text-contactanos .btn-comprar,
 .btn-comprar {
