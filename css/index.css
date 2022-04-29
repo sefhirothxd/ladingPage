@@ -164,33 +164,49 @@ header {
   margin-bottom: 15px;
 }
 .texto-banner-text__verde{
-  background-color: #B5D104;
-  display: inline-block;
-  position: relative;
-  padding-right: 1.5rem;
-  /* white-space: nowrap;
-  border-radius: 4px solid;
-  width: 12ch;
-  animation: typing 2s steps(12),
-  blink .5s infinite step-end alternate;
-  overflow: hidden; */
+   background-color: #B5D104;
+   position: relative;
+   display: inline-block;
+   padding-right: 1.2rem;
   }
-  /* @keyframes typing {
-  from { width: 0 }
+  
+  .texto-banner-text__verde::before{
+    content: "";
+    width: 1.5rem;
+    height:100%;
+    background-color: #B5D104;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: -15px;
   }
-  @keyframes blink {
-  50% { border-color: transparent }
+
+  .texto-banner-text__verde::after {
+    content: "";
+    border-left: 3px solid white;
+    background: #B5D104;
+    right: 0px;
+    height: 100%;
+    position: absolute;
+    animation: typing 3s infinite  alternate steps(8), blink .5s infinite;
+    /* animation-delay: 3s */
+    }
+  /* @keyFrames typing {
+  from { width: 0%;}
+  to{
+    width:114%;
+  }
   } */
-.texto-banner-text__verde::before{
-  content: "";
-  width: 1.5rem;
-  height:100%;
-  background-color: #B5D104;
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  left: -15px;
-}
+  @keyFrames typing {
+  0% { width: 0%;}
+  100%{
+    width:114%;
+  }
+  }
+  
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
 
 
 
@@ -206,6 +222,8 @@ header {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.2;
+  width: 87%;
+
   /* margin-bottom: 15px; */
 }
 
@@ -573,7 +591,7 @@ contactanos section
   border: 3px solid #00345c;
   color: #fff;
   padding: 10px 33px;
-  margin-top: 39px;
+  /* margin-top: 39px; */
   font-size: 16px;
   cursor: pointer;
   outline: none;

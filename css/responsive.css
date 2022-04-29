@@ -5,10 +5,14 @@ repsosive  section expertos
 */
 
 @media (max-width: 1200px) {
-	.texto-banner p {
-		font-size: 30px;
-	}
+	/* .texto-banner h3 {
+		font-size: 50px;
+	} */
 
+	.texto-banner span{
+		font-size: 2rem;
+		line-height: 1.5;
+	}
 	.container-contactanos {
 		border-radius: 0px 0px 20px 20px;
 	}
@@ -80,6 +84,9 @@ repsosive  section expertos
 }
 
 @media (max-width: 1024px) {
+	.texto-banner span{
+		width: 100%;
+	}
 	.container-cards {
 	flex-flow: column wrap;
 	row-gap: 1rem;
@@ -169,6 +176,9 @@ repsosive  section expertos
 	}
 	.texto-banner {
 		width: 100%;
+	}
+	.texto-banner h3 {
+		font-size: 60px;
 	}
 	.group-btn-banner {
 		display: flex;
