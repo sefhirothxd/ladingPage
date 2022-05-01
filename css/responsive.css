@@ -115,6 +115,9 @@ repsosive  section expertos
 	.texto-banner {
 		width: 80%;
 	}
+	.texto-banner h3{
+		width: 100%;
+	}
 	.container-cards {
 		justify-content: flex-start;
 	}
