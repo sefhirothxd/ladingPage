@@ -188,7 +188,7 @@ header {
     right: 0px;
     height: 100%;
     position: absolute;
-    animation: typing 3s infinite  alternate steps(8), blink .5s infinite;
+    animation: typing 2s infinite  alternate steps(8), blink .5s infinite;
     /* animation-delay: 3s */
     }
   /* @keyFrames typing {
@@ -229,6 +229,27 @@ header {
 
 .group-btn-banner{
   padding: 40px 0;
+}
+.container-formulario{
+  position:fixed;
+  bottom: 20px;
+  right: 6%;
+  z-index: 999;
+  box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
+}
+.x-icon{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block
 }
 .formulario {
   display: flex;
@@ -738,6 +759,8 @@ object-position: top;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   justify-content: space-between;
   align-items: center;
   color: #fff;

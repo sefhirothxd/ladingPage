@@ -96,6 +96,58 @@
 				/>
 			</svg>
 		</a>
+		<div class="container-formulario none">
+			<i class="fa-solid fa-xmark fa-2xl x-icon"></i>
+			<form class="formulario">
+				<h2 class="form-title">Contáctanos</h2>
+				<input
+					class="form-input"
+					type="text"
+					placeholder="Nombre y Apellido"
+					id="nombres"
+					name="nombres"
+				/>
+				<input
+					class="form-input"
+					type="text"
+					placeholder="Telèfono"
+					id="telefono"
+					name="telefono"
+				/>
+				<input
+					class="form-input"
+					type="text"
+					placeholder="Correo"
+					id="correo"
+					name="correo"
+				/>
+				<input
+					class="form-input"
+					type="text"
+					placeholder="Mensaje"
+					id="mensaje"
+					name="mensaje"
+				/>
+				<button class="btn-form" type="submit">Enviar</button>
+			</form>
+		</div>
+		<button class="comentario">
+			<svg
+				width="38"
+				height="38"
+				viewBox="0 0 38 38"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M35.9999 18.0556C36.0064 20.5487 35.424 23.008 34.2999 25.2334C32.9672 27.9 30.9184 30.1429 28.3829 31.7109C25.8475 33.2788 22.9255 34.11 19.9444 34.1111C17.4513 34.1176 14.992 33.5351 12.7666 32.4111L2 36L5.58888 25.2334C4.46487 23.008 3.88239 20.5487 3.88889 18.0556C3.89004 15.0745 4.72115 12.1525 6.28913 9.61708C7.85711 7.08163 10.1 5.03279 12.7666 3.70005C14.992 2.57603 17.4513 1.99355 19.9444 2.00005H20.8889C24.826 2.21726 28.5446 3.87904 31.3328 6.66722C34.121 9.4554 35.7827 13.174 35.9999 17.1111V18.0556Z"
+					stroke="white"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</svg>
+		</button>
 		<!-- <div class="barra-lateral">
 			<svg width="41" height="31" viewBox="0 0 41 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="41" height="5.49" rx="2.745" fill="white"/>
@@ -150,40 +202,6 @@
 							>
 						</div>
 					</article>
-					<div class="container-formulario">
-						<form class="formulario">
-							<h2 class="form-title">Contáctanos</h2>
-							<input
-								class="form-input"
-								type="text"
-								placeholder="Nombre y Apellido"
-								id="nombres"
-								name="nombres"
-							/>
-							<input
-								class="form-input"
-								type="text"
-								placeholder="Telèfono"
-								id="telefono"
-								name="telefono"
-							/>
-							<input
-								class="form-input"
-								type="text"
-								placeholder="Correo"
-								id="correo"
-								name="correo"
-							/>
-							<input
-								class="form-input"
-								type="text"
-								placeholder="Mensaje"
-								id="mensaje"
-								name="mensaje"
-							/>
-							<button class="btn-form" type="submit">Enviar</button>
-						</form>
-					</div>
 				</section>
 			</div>
 			<section class="section-expertos" id="price">
@@ -619,11 +637,7 @@
 				<div class="container-footer-social">
 					<div class="container-heart">
 						<a href="#"> </a>
-						<p>
-							Hecho con
-							<i class="fa-solid fa-heart" style="font-size: 15px"></i> por
-							skillien
-						</p>
+						<p>© 2022 skillien.com Todos los derechos reservados.</p>
 					</div>
 					<div>
 						<h3>Síguenos:</h3>
@@ -644,39 +658,5 @@
 		</footer>
 		<script type="module" src="./js/main.js"></script>
 		<script src="js/index.js"></script>
-		<script src="js/splide.min.js"></script>
-		<script>
-			let probando = new Splide('.splide2', {
-				type: 'loop',
-				direction: 'ttb',
-				wheel: true,
-				releaseWheel: true,
-				heightRatio: 0.42,
-				width: '100%',
-			});
-
-			probando.mount();
-
-			var splide = new Splide('.splide', {
-				type: 'loop',
-				perPage: 1,
-				autoplay: true,
-			});
-			splide.mount();
-
-			$btn1.addEventListener('click', () => {
-				console.log(splide);
-				splide.go(0);
-			});
-			$btn2.addEventListener('click', () => {
-				splide.go(1);
-			});
-			$btn3.addEventListener('click', () => {
-				splide.go(2);
-			});
-			$btn4.addEventListener('click', () => {
-				splide.go(3);
-			});
-		</script>
 	</body>
 </html>
