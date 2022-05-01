@@ -194,13 +194,12 @@ repsosive  section expertos
 		margin-left: 0;
 		margin-top: 20px;
 	}
-	.container-formulario {
-		display: flex;
-		width: 100%;
+ .container-formulario {
+		right:0px;
 	}
-	.formulario {
+	/* .formulario {
 		width: 100%;
-	}
+	} */
 	.container-contactanos {
 		flex-direction: column;
 		padding: 50px 0px;
