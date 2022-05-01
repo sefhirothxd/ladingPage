@@ -164,9 +164,6 @@ repsosive  section expertos
 	.title-header {
 		font-size: 25px;
 	}
-	.container-probando{
-		background: black;
-	}
 	.container-url ul {
 		flex-direction: column;
 		row-gap: 30px;
