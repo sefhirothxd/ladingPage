@@ -75,28 +75,27 @@ header {
 }
 .container-probando {
   position: relative;
- 
 }
-.banner-img{
+.logo_skillien {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
   top: 0;
   right: 0;
-  object-fit:cover;
+  object-fit: cover;
   z-index: -1;
 }
-.container-canvas{
+.container-canvas {
   position: relative;
   background: black;
 }
-#c{
+#c {
   position: absolute;
   right: 0;
   bottom: 0;
   /* object-fit: contain; */
   width: 100%;
-  height: 100%; 
+  height: 100%;
   z-index: -1;
   overflow: hidden;
 }
@@ -118,7 +117,6 @@ header {
   justify-content: center;
   padding-bottom: 50px;
   color: #fff;
-  
 }
 .texto-banner h3 {
   width: 50%;
@@ -146,7 +144,7 @@ header {
     left: -15px;
   } */
 
-  /* .texto-banner-text__verde::after {
+/* .texto-banner-text__verde::after {
     content: "";
     border-left: 3px solid white;
     background: #B5D104;
@@ -155,13 +153,13 @@ header {
     position: absolute;
     animation: typing 2s infinite  alternate steps(8), blink .5s infinite;
     } */
-  /* @keyFrames typing {
+/* @keyFrames typing {
   from { width: 0%;}
   to{
     width:114%;
   }
   } */
-  /* @keyFrames typing {
+/* @keyFrames typing {
   0% { width: 0%;}
   100%{
     width:114%;
@@ -171,10 +169,6 @@ header {
   @keyFrames blink {
    50% { border-color: transparent}
   } */
-
-
-
-
 
 /* .texto-banner-text__verde::before{
   content: "";
@@ -191,29 +185,29 @@ header {
   /* margin-bottom: 15px; */
 }
 
-.group-btn-banner{
+.group-btn-banner {
   padding: 40px 0;
 }
-.container-formulario{
-  position:fixed;
+.container-formulario {
+  position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 100px;
   z-index: 999;
-  box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 11px 32px -3px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 32px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 32px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 32px -3px rgba(0, 0, 0, 0.75);
 }
-.x-icon{
+.x-icon {
   position: absolute;
   top: 30px;
   right: 6%;
   cursor: pointer;
 }
-.none{
+.none {
   display: none;
 }
-.block{
-  display: block
+.block {
+  display: block;
 }
 .formulario {
   display: flex;
@@ -239,7 +233,7 @@ header {
   padding: 10px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #8E8E8E;
+  border-bottom: 1px solid #8e8e8e;
   margin-bottom: 30px;
   outline: none;
   width: 100%;
@@ -263,12 +257,12 @@ header {
 
 input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #8E8E8E;
+  color: #8e8e8e;
   opacity: 1; /* Firefox */
 }
 
 .btn-form {
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   color: #fff;
   border: none;
   width: 85%;
@@ -308,31 +302,31 @@ css de por que expertos
   padding: 100px 0 0px 0;
 }
 .text-expertos {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #003a84;
   text-align: center;
   /* margin-bottom: 7rem; */
   font-weight: bold;
   font-size: 35px;
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-/* text-fill-color: transparent; */
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
-.text-expert-hr{
+.text-expert-hr {
   background-color: #000;
   height: 0.2rem;
   width: 17rem;
   margin: 1rem auto;
 }
-.text-expert-p{
-  font-family: 'Roboto', sans-serif;
+.text-expert-p {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 7rem;
   font-weight: 400;
   font-size: 2.5rem;
-  color:  #BABABA;
+  color: #bababa;
 }
 .container-cards {
   display: flex;
@@ -353,14 +347,13 @@ background-clip: text;
   max-width: 40rem;
   transition: 0.5s;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;  
+  border-radius: 30px;
   /* border: 1px solid #BABABA; */
-
 }
-.container-card-precio__container-list{
+.container-card-precio__container-list {
   display: flex;
-  justify-content:space-between;
-  flex-direction:column;
+  justify-content: space-between;
+  flex-direction: column;
   height: 61rem;
   background: #003a84;
 }
@@ -403,7 +396,7 @@ background-clip: text;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -417,7 +410,7 @@ background-clip: text;
   margin-top: 2rem;
   /* margin-bottom: 2rem; */
 }
-.card-precio__container-money-price-after{
+.card-precio__container-money-price-after {
   margin-bottom: 2rem;
   margin-top: 1rem;
   text-decoration: line-through;
@@ -436,21 +429,19 @@ background-clip: text;
 .card-precio__container-money .card-precio__container-igv {
   position: absolute;
   font-weight: 400;
-  font-size:2rem;
+  font-size: 2rem;
   top: 3rem;
   right: -17rem;
 }
 .card-precio__container-money .card-precio__container-igv-corp {
   position: absolute;
   font-weight: 400;
-  font-size:2rem;
+  font-size: 2rem;
   top: 3rem;
   right: -20rem;
 }
 
-
-.card-precio__container{
-
+.card-precio__container {
   text-align: center;
 }
 
@@ -475,19 +466,19 @@ background-clip: text;
   max-width: 230px;
   margin: 0 auto;
 }
-.close-x{
-  color: #BDBDBD;
+.close-x {
+  color: #bdbdbd;
   margin-left: 2px;
   margin-right: 2px;
 }
-.x-p{
-  color: #BDBDBD;
+.x-p {
+  color: #bdbdbd;
 }
 .card-first-margin {
   margin-top: 1.5rem;
 }
 .btn-comprar-card {
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   color: #fff;
   /* margin-left: 15px; */
   padding: 1.5rem 40px;
@@ -570,38 +561,45 @@ contactanos section
 }
 .group-btn-banner {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
   gap: 15px;
+  text-align: center;
+  margin: auto;
 }
 .group-btn-banner .btn-contactanos {
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
   outline: none;
+  
+  margin: auto;
 }
-.btn-banner-second{
-  font-size:2.5rem;
+.btn-banner-second {
+  font-size: 2.5rem;
   font-weight: 500;
-  padding: 20px 20px;
+  padding: 12px 0;
+  width: 220px;
+  
   border: none;
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   transition: 0.5s;
 }
-.btn-banner-second:hover{
-  transform:scale(1.1);
+.btn-banner-second:hover {
+  transform: scale(1.1);
 }
 .btn-banner-first {
-  font-size:2.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  padding: 16px 50px;
+  padding: 10px 0;
+  width: 220px;
+  margin: auto;
   border: 3px solid white;
   transition: 0.5s;
 }
-.btn-banner-first:hover{
-  transform:scale(1.1);
+.btn-banner-first:hover {
+  transform: scale(1.1);
 }
-
 
 /* Portfolio section */
 .section-portafolio {
@@ -620,8 +618,8 @@ contactanos section
   font-weight: bold;
   font-size: 35px;
 }
-.section-portafolio .text-expert-p{
-  margin-bottom:3.2rem;
+.section-portafolio .text-expert-p {
+  margin-bottom: 3.2rem;
 }
 .container-portafolio-img {
   display: flex;
@@ -635,12 +633,12 @@ contactanos section
 }
 .portafolio-img {
   position: relative;
-  background: #639bc6;
+  /* background: #639bc6; */
   max-width: 378px;
   height: 348px;
   width: 100%;
   border-radius: 30px;
-	transition: 0.5s;
+  transition: 0.5s;
   overflow: hidden;
 }
 .portafolio-img:hover {
@@ -654,12 +652,13 @@ contactanos section
   object-fit: cover;
   height: 100%;
 }
-.portfolio-gradient{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0),#000000);
+.portfolio-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
   width: 100%;
   height: 170px;
   position: absolute;
-  z-index: 2; bottom: 0;
+  z-index: 2;
+  bottom: 0;
 }
 .article-portafolio {
   position: absolute;
@@ -690,7 +689,7 @@ contactanos section
   max-width: 378px;
   height: 348px;
   width: 100%;
-object-position: top;
+  object-position: top;
   object-fit: cover;
   border-radius: 20px;
   transition: 0.5s ease;
@@ -703,7 +702,7 @@ object-position: top;
 /* Footer */
 
 .footer {
-  background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   display: flex;
   justify-content: center;
   align-items: flex-start;

@@ -16,15 +16,9 @@ repsosive  section expertos
 	.container-contactanos {
 		border-radius: 0px 0px 20px 20px;
 	}
-
 	.section-contactanos {
 		column-gap: 50px;
 	}
-	/* .formulario {
-		min-width: 325px;
-	} */
-
-
 	.btn-comprar-card{
 		width:100%;
 		max-width: 160px;
@@ -35,17 +29,13 @@ repsosive  section expertos
 	.estrella > img{
 		width: 3rem;
 	}
-
-
 	.container-cards::-webkit-scrollbar {
 		width: 12px;
 	}
-
 	.container-cards::-webkit-scrollbar-track {
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
 	}
-
 	.container-cards::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
@@ -53,16 +43,13 @@ repsosive  section expertos
 	.splide2 .splide__arrows {
 		position: absolute;
 		left: -6% !important;
-		/* right: 0 !important; */
 		bottom: -50% !important;
 		justify-content: space-between !important;
-		/* transform: translate(5%) !important; */
 		top: 70% !important;
 	}
 	.splide2 .splide__arrow--next {
 		top: 90% !important;
 	}
-
 	.footer {
 		padding: 50px 0 20px 0;
 	}
@@ -96,6 +83,7 @@ repsosive  section expertos
 		transform: none;
 	}
 }
+
 @media (max-width: 824px) {
 	.title-header {
 		font-size: 30px;
@@ -104,12 +92,11 @@ repsosive  section expertos
 		margin-left: 0;
 		margin-top: 20px;
 	}
-
 	.banner {
 		flex-direction: column;
 		align-items: center;
 		box-sizing: border-box;
-		padding: 50px 20px 100px;
+		padding: 20px;
 		width: 100%;
 	}
 	.texto-banner {
@@ -122,13 +109,9 @@ repsosive  section expertos
 		justify-content: flex-start;
 	}
 	.section-contactanos {
-		/* flex-direction: column; */
-		/* row-gap: 50px; */
-		/* padding: 50px 20px; */
 		padding: 0px;
 	}
 	.section-contactanos img {
-		/* min-width: auto; */
 		width: 90%;
 		padding-left: 20px;
 	}
@@ -163,13 +146,16 @@ repsosive  section expertos
 	}
 }
 
-@media (max-width: 480px) {
-	.title-header {
+@media (max-width: 500px) {
+	/* .title-header {
 		font-size: 25px;
-	}
+	} */
 	.container-url ul {
 		flex-direction: column;
 		row-gap: 30px;
+	}
+	.link_mail{
+		display: none;
 	}
 	.splide__arrows {
 		display: none;
@@ -192,14 +178,11 @@ repsosive  section expertos
 	}
 	.btn-banner-second {
 		margin-left: 0;
-		margin-top: 20px;
+		/* margin-top: 20px; */
 	}
  .container-formulario {
 		right:0px;
 	}
-	/* .formulario {
-		width: 100%;
-	} */
 	.container-contactanos {
 		flex-direction: column;
 		padding: 50px 0px;
@@ -213,9 +196,6 @@ repsosive  section expertos
     padding: 50px 0 0px 0;
 }
 	.container-text-contactanos {
-		/* min-width: auto; */
-		/* width: 30%; */
-		/* font-size: 11px; */
 		padding: 30px 0px;
 		width: 90%;
 	}
@@ -229,13 +209,9 @@ repsosive  section expertos
 		margin-left: 0;
 		margin-top: 20px;
 	}
-
 	.container-portafolio-img {
 		padding: 0 20px;
 	}
-	/* .img-portafolio {
-		
-	} */
 	.footer-contact {
 		width: 100%;
 	}
@@ -243,7 +219,6 @@ repsosive  section expertos
 		width: 100%;
 	}
 	.container-cards {
-		/* width: 30px; */
 		column-gap: 0;
 		padding: 0 20px;
 		width: 100%;
@@ -258,7 +233,6 @@ repsosive  section expertos
 	.card-exp .svg-icon {
 		width: 30px;
 	}
-
 	.article-portafolio {
 		position: absolute;
 		top: 67%;
