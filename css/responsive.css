@@ -50,6 +50,15 @@ repsosive  section expertos
 	.splide2 .splide__arrow--next {
 		top: 90% !important;
 	}
+
+	.section-contacto{
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+	.section-contacto__title{
+		font-size:3.5rem
+	}
 	.footer {
 		padding: 50px 0 20px 0;
 	}
@@ -143,6 +152,13 @@ repsosive  section expertos
 	}
 	.splide__arrows {
 		display: none;
+	}
+	.section-contacto{
+		flex-direction: column;
+		row-gap: 40px;
+	}
+	.section-contacto__container-texto{
+		margin-right: 0;
 	}
 }
 
@@ -245,5 +261,27 @@ repsosive  section expertos
 		font-size: 15px;
 		width: 100%;
 		max-width: none;
+	}
+
+	.section-contacto__title{
+			font-size:2.8rem;
+	}
+	.container-contactanos_text-subtitle figure p{
+		font-size: 1.5rem;
+	}
+	.container-contactanos_text-p{
+		font-size:1.5rem;
+		line-height: 1.5;
+		color: #8e8e8e;
+		margin: 2rem 0;
+	}
+	.container-contactanos__telefono-texto{
+		font-size:1.8rem;
+	}
+	.formulario {
+		/* width:100%; */
+		/* width: 370px; */
+		min-width: 100%;
+		box-sizing: border-box;
 	}
 }
