@@ -690,6 +690,72 @@ contactanos section
   transform: scale(1.2);
   vertical-align: top;
 }
+
+/*Teams */
+
+.section-teams{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.container-card-teams{
+background: #F4F9FF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+overflow: hidden;
+}
+.card-title{
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.container-card-teams__img{
+  max-width:471px;
+  max-height:371px;
+  width:100%;
+}
+.grey{
+  -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+}
+.card-text{
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+margin-bottom: 22px;
+}
+.container-group-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+.card-link {
+display:flex;
+justify-content:center;
+align-items:center;
+width: 48px;
+height: 48px;
+background: #D5D5D5;
+border-radius: 40px;
+}
+
+
+/*end*/
 /* contacto */
 
 .section-contacto {
