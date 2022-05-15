@@ -764,7 +764,9 @@ height: 48px;
 background: #D5D5D5;
 border-radius: 40px;
 }
-
+.card-link img {
+  width:22px;
+}
 
 /*end*/
 /* contacto */
