@@ -172,7 +172,10 @@ repsosive  section expertos
 		font-size: 25px;
 	} */
 	.container-url{
-		margin-top: 20px;
+		/* margin-top: 20px; */
+	}
+	.container-btn-whatapp{
+		display: none;
 	}
 	.container-url ul {
 		flex-direction: column;
