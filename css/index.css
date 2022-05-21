@@ -191,7 +191,7 @@ header {
   padding: 40px 0;
 }
 .container-formulario {
-  background: #003a84;
+  /* background: #003a84; */
   border-radius: 10px;
 }
 .x-icon {
@@ -216,7 +216,7 @@ header {
   font-size: 3rem;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: #fff;
+  color: #bababa;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -693,7 +693,7 @@ contactanos section
 
 /*Teams */
 
-.section-teams{
+.section-teams {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -701,54 +701,53 @@ contactanos section
   width: 100%;
 }
 
-
-.container-card-teams{
-background: #F4F9FF;
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-border-radius: 30px;
-overflow: hidden;
-height: auto;
-max-width: 300px;
-position: relative;
+.container-card-teams {
+  background: #f4f9ff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+  height: auto;
+  max-width: 300px;
+  position: relative;
 }
-.card-title{
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-margin-top: 5px;
-background: linear-gradient(90.29deg, #243492 0.95%, #046EBE 99.49%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5px;
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-.container-card-teams__img{
+.container-card-teams__img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   display: block;
 }
-.grey{
+.grey {
   -webkit-filter: grayscale(1); /* Webkit */
-    filter: gray; /* IE6-9 */
-    filter: grayscale(1); /* W3C */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
 }
-.container-card-teams__gruop{
+.container-card-teams__gruop {
   /* position: absolute;  */
   /* bottom: 0; */
-  background:#F4F9FF;
+  background: #f4f9ff;
   width: 100%;
 }
-.card-text{
-font-weight: 400;
-font-size: 25px;
-line-height: 29px;
-text-align: center;
-margin-bottom: 22px;
+.card-text {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 22px;
 }
-.container-group-link{
+.container-group-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -756,16 +755,16 @@ margin-bottom: 22px;
   margin-bottom: 1.8rem;
 }
 .card-link {
-display:flex;
-justify-content:center;
-align-items:center;
-width: 48px;
-height: 48px;
-background: #D5D5D5;
-border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #d5d5d5;
+  border-radius: 40px;
 }
 .card-link img {
-  width:22px;
+  width: 22px;
 }
 
 /*end*/
@@ -787,7 +786,7 @@ border-radius: 40px;
   margin-right: 30px;
 }
 .section-contacto__span-text {
-  color: #003A84;
+  color: #003a84;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -797,8 +796,8 @@ border-radius: 40px;
   font-weight: 700;
 }
 .section-contacto__hr {
-  height: 5px;
-  background-color: #003A84;
+  background-color: #000;
+  height: 0.2rem;
   width: 22%;
   margin-right: 77%;
   margin-bottom: 40px;
@@ -832,7 +831,7 @@ border-radius: 40px;
   row-gap: 10px;
 }
 .container-contactanos__telefono-texto a {
-  color: #003A84;
+  color: #003a84;
   font-weight: 700;
 }
 .section-contacto__svg {
@@ -850,15 +849,15 @@ border-radius: 40px;
   align-items: center;
 }
 .section-contacto__svg-color {
-  background-color: #003A84;
-  border: 15px solid #003A84;
+  background-color: #003a84;
+  border: 15px solid #003a84;
 }
 
 /* Footer */
 
 .footer {
   /* background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%); */
-  background: #003A84;
+  background: #003a84;
   display: flex;
   justify-content: center;
   align-items: flex-start;
