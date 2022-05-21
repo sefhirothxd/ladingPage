@@ -1,8 +1,10 @@
 //cambio de precios
 const precio = document.querySelector('.container-cards');
 const bandera = document.querySelector('.container-bandera');
+
 const country = {
 	PE: {
+		name: 'Perú',
 		money: 'S/',
 		bandera: 'https://flagcdn.com/pe.svg',
 		basico: {
@@ -22,8 +24,69 @@ const country = {
 		},
 	},
 	US: {
+		name: 'United States',
 		money: '$',
 		bandera: 'https://flagcdn.com/us.svg',
+		basico: {
+			price: '170',
+			priceAlter: '199',
+			renovacion: '65',
+		},
+		corporativo: {
+			price: '350',
+			priceAlter: '399',
+			renovacion: '110',
+		},
+		emprendedor: {
+			price: '260',
+			priceAlter: '320',
+			renovacion: '90',
+		},
+	},
+	CL: {
+		name: 'Chile',
+		money: '$',
+		bandera: 'https://flagcdn.com/cl.svg',
+		basico: {
+			price: '170',
+			priceAlter: '199',
+			renovacion: '65',
+		},
+		corporativo: {
+			price: '350',
+			priceAlter: '399',
+			renovacion: '110',
+		},
+		emprendedor: {
+			price: '260',
+			priceAlter: '320',
+			renovacion: '90',
+		},
+	},
+	EC: {
+		name: 'Ecuador',
+		money: '$',
+		bandera: 'https://flagcdn.com/ec.svg',
+		basico: {
+			price: '170',
+			priceAlter: '199',
+			renovacion: '65',
+		},
+		corporativo: {
+			price: '350',
+			priceAlter: '399',
+			renovacion: '110',
+		},
+		emprendedor: {
+			price: '260',
+			priceAlter: '320',
+			renovacion: '90',
+		},
+	},
+	CO: {
+		name: 'Colombia',
+		money: '$',
+		bandera: 'https://flagcdn.com/co.svg',
 		basico: {
 			price: '170',
 			priceAlter: '199',
@@ -72,7 +135,7 @@ const ubicacion = async () => {
 	src=${precios.bandera}
 	width="32px"
 	alt="bandera"
-/>`;
+/><p>${precios.name}</p>`;
 	console.log(precios);
 	precio.innerHTML = `<div class="card-precio">
 	<div class="card-precio__container">

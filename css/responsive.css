@@ -162,17 +162,23 @@ repsosive  section expertos
 	}
 }
 
+@media (max-width: 630px) {
+	.link_mail{
+		display: none;
+	}
+}
 @media (max-width: 500px) {
 	/* .title-header {
 		font-size: 25px;
 	} */
+	.container-url{
+		margin-top: 20px;
+	}
 	.container-url ul {
 		flex-direction: column;
 		row-gap: 30px;
 	}
-	.link_mail{
-		display: none;
-	}
+	
 	.splide__arrows {
 		display: none;
 	}

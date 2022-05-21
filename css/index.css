@@ -89,6 +89,20 @@ header {
   position: relative;
   background: black;
 }
+.container-bandera{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.container-bandera > p{
+  color: #969696;
+  font-size: 16px;
+  font-weight: 500;
+}
 #c {
   position: absolute;
   right: 0;
