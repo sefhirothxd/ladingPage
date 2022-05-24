@@ -5,6 +5,7 @@ const $nombres = document.querySelector('#nombres');
 const $telefono = document.querySelector('#telefono');
 const $correo = document.querySelector('#correo');
 const $mensaje = document.querySelector('#mensaje');
+const notificacion = document.querySelector('.notificacion');
 
 $form.addEventListener('submit', async (e) => {
 	e.preventDefault();
@@ -17,7 +18,6 @@ $form.addEventListener('submit', async (e) => {
 		ubicacion: datos.country,
 	};
 	const nuevo = JSON.stringify(data);
-	console.log(nuevo);
 	const res = await fetch('https://back-correo.herokuapp.com/mail', {
 		method: 'POST',
 		body: nuevo,
@@ -27,10 +27,15 @@ $form.addEventListener('submit', async (e) => {
 		},
 	});
 	if (res.ok) {
+		notificacion.classList.remove('none');
+		notificacion.classList.add('flex');
+		setTimeout(() => {
+			notificacion.classList.add('none');
+			notificacion.classList.remove('flex');
+		}, 2000);
 		$nombres.value = '';
 		$telefono.value = '';
 		$correo.value = '';
 		$mensaje.value = '';
-		alert('El formulario se ha enviado correctamente');
 	}
 });
