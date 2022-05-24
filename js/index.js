@@ -1,27 +1,29 @@
+import ubicacion from './api.js';
+
 const $form = document.querySelector('.formulario');
 const $nombres = document.querySelector('#nombres');
 const $telefono = document.querySelector('#telefono');
 const $correo = document.querySelector('#correo');
 const $mensaje = document.querySelector('#mensaje');
-const $containerSlider = document.querySelector('.containeer-slider');
-const verFormulario = document.querySelector('.container-formulario');
-// botones expert
-const $btn1 = document.querySelector('.btn-expert-1');
-const $btn2 = document.querySelector('.btn-expert-2');
-const $btn3 = document.querySelector('.btn-expert-3');
-const $btn4 = document.querySelector('.btn-expert-4');
-const $containerContacto = document.querySelector('.section-contactanos');
 
 $form.addEventListener('submit', async (e) => {
 	e.preventDefault();
-
-	const form = new FormData($form);
-
-	const res = await fetch('https://formspree.io/f/mgedyzka', {
+	const datos = await ubicacion();
+	const data = {
+		nombres: $nombres.value,
+		telefono: $telefono.value,
+		correo: $correo.value,
+		mensaje: $mensaje.value,
+		ubicacion: datos.country,
+	};
+	const nuevo = JSON.stringify(data);
+	console.log(nuevo);
+	const res = await fetch('https://back-correo.herokuapp.com/mail', {
 		method: 'POST',
-		body: form,
+		body: nuevo,
 		headers: {
 			Accept: 'application/json',
+			'Content-Type': 'application/json',
 		},
 	});
 	if (res.ok) {

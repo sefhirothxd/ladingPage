@@ -1,3 +1,5 @@
+import ubicacion from './api.js';
+
 //cambio de precios
 const precio = document.querySelector('.container-cards');
 const bandera = document.querySelector('.container-bandera');
@@ -124,12 +126,9 @@ const countryDefaults = {
 	},
 };
 
-const ubicacion = async () => {
-	console.log(location);
-	let url = 'https://ipinfo.io/json?token=ada65ee9ca7df1';
-	let response = await fetch(url);
-	let data = await response.json();
-	console.log(data);
+const cambiandoInfo = async () => {
+	const data = await ubicacion();
+	console.log('aqui toy', data);
 	const precios = country[data.country] || countryDefaults;
 	bandera.innerHTML = `<img
 	src=${precios.bandera}
@@ -393,4 +392,4 @@ const ubicacion = async () => {
 	</div>
 </div>`;
 };
-ubicacion();
+cambiandoInfo();
