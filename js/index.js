@@ -29,10 +29,12 @@ $form.addEventListener('submit', async (e) => {
 	if (res.ok) {
 		notificacion.classList.remove('none');
 		notificacion.classList.add('flex');
+		notificacion.classList.add('slide-right');
 		setTimeout(() => {
 			notificacion.classList.add('none');
 			notificacion.classList.remove('flex');
-		}, 2000);
+			notificacion.classList.remove('slide-right');
+		}, 3000);
 		$nombres.value = '';
 		$telefono.value = '';
 		$correo.value = '';
