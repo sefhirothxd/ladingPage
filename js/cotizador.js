@@ -108,8 +108,8 @@ const country = {
 };
 const countryDefaults = {
 	money: '$',
-	name: 'global',
-	bandera: 'https://flagcdn.com/us.svg',
+	name: 'United Nations',
+	bandera: 'https://flagcdn.com/un.svg',
 	basico: {
 		price: '170',
 		priceAlter: '199',
