@@ -701,7 +701,7 @@ contactanos section
   transition: 0.5s ease;
 }
 .img-portafolio:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   vertical-align: top;
 }
 
