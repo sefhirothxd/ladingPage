@@ -3,24 +3,26 @@ import ubicacion from './api.js';
 //cambio de precios
 const precio = document.querySelector('.container-cards');
 const bandera = document.querySelector('.container-bandera');
+const precioPromo = document.querySelector('.precio-promo');
 
 const country = {
 	PE: {
 		name: 'Perú',
 		money: 'S/',
 		bandera: 'https://flagcdn.com/pe.svg',
+		precioPromo: '499',
 		basico: {
-			price: '650',
+			price: '499',
 			priceAlter: '750',
 			renovacion: '250',
 		},
 		corporativo: {
-			price: '1299',
+			price: '1099',
 			priceAlter: '1500',
 			renovacion: '390',
 		},
 		emprendedor: {
-			price: '990',
+			price: '799',
 			priceAlter: '1200',
 			renovacion: '350',
 		},
@@ -29,18 +31,19 @@ const country = {
 		name: 'United States',
 		money: '$',
 		bandera: 'https://flagcdn.com/us.svg',
+		precioPromo: '135',
 		basico: {
-			price: '170',
+			price: '135',
 			priceAlter: '199',
 			renovacion: '65',
 		},
 		corporativo: {
-			price: '350',
+			price: '300',
 			priceAlter: '399',
 			renovacion: '110',
 		},
 		emprendedor: {
-			price: '260',
+			price: '215',
 			priceAlter: '320',
 			renovacion: '90',
 		},
@@ -49,18 +52,19 @@ const country = {
 		name: 'Chile',
 		money: '$',
 		bandera: 'https://flagcdn.com/cl.svg',
+		precioPromo: '135',
 		basico: {
-			price: '170',
+			price: '135',
 			priceAlter: '199',
 			renovacion: '65',
 		},
 		corporativo: {
-			price: '350',
+			price: '300',
 			priceAlter: '399',
 			renovacion: '110',
 		},
 		emprendedor: {
-			price: '260',
+			price: '215',
 			priceAlter: '320',
 			renovacion: '90',
 		},
@@ -69,18 +73,19 @@ const country = {
 		name: 'Ecuador',
 		money: '$',
 		bandera: 'https://flagcdn.com/ec.svg',
+		precioPromo: '135',
 		basico: {
-			price: '170',
+			price: '135',
 			priceAlter: '199',
 			renovacion: '65',
 		},
 		corporativo: {
-			price: '350',
+			price: '300',
 			priceAlter: '399',
 			renovacion: '110',
 		},
 		emprendedor: {
-			price: '260',
+			price: '215',
 			priceAlter: '320',
 			renovacion: '90',
 		},
@@ -89,18 +94,19 @@ const country = {
 		name: 'Colombia',
 		money: '$',
 		bandera: 'https://flagcdn.com/co.svg',
+		precioPromo: '135',
 		basico: {
-			price: '170',
+			price: '135',
 			priceAlter: '199',
 			renovacion: '65',
 		},
 		corporativo: {
-			price: '350',
+			price: '300',
 			priceAlter: '399',
 			renovacion: '110',
 		},
 		emprendedor: {
-			price: '260',
+			price: '215',
 			priceAlter: '320',
 			renovacion: '90',
 		},
@@ -110,18 +116,19 @@ const countryDefaults = {
 	money: '$',
 	name: 'United Nations',
 	bandera: 'https://flagcdn.com/un.svg',
+	precioPromo: '135',
 	basico: {
-		price: '170',
+		price: '135',
 		priceAlter: '199',
 		renovacion: '65',
 	},
 	corporativo: {
-		price: '350',
+		price: '300',
 		priceAlter: '399',
 		renovacion: '110',
 	},
 	emprendedor: {
-		price: '260',
+		price: '215',
 		priceAlter: '320',
 		renovacion: '90',
 	},
@@ -131,6 +138,7 @@ const cambiandoInfo = async () => {
 	const data = await ubicacion();
 	console.log('aqui toy', data);
 	const precios = country[data.country] || countryDefaults;
+	precioPromo.innerHTML = `<span class="precio-promo">${precios.money}${precios.precioPromo}</span>`;
 	bandera.innerHTML = `<img
 	src=${precios.bandera}
 	width="32px"
