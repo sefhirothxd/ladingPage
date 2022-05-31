@@ -10,8 +10,8 @@ const country = {
 		money: 'S/',
 		bandera: 'https://flagcdn.com/pe.svg',
 		basico: {
-			price: '599',
-			priceAlter: '650',
+			price: '650',
+			priceAlter: '750',
 			renovacion: '250',
 		},
 		corporativo: {
