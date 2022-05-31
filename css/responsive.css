@@ -9,37 +9,46 @@ repsosive  section expertos
 		font-size: 50px;
 	} */
 
-	.texto-banner span{
+	.texto-banner span {
 		font-size: 2rem;
 		line-height: 1.5;
 	}
+
 	.container-contactanos {
 		border-radius: 0px 0px 20px 20px;
 	}
+
 	.section-contactanos {
 		column-gap: 50px;
 	}
-	.btn-comprar-card{
-		width:100%;
+
+	.btn-comprar-card {
+		width: 100%;
 		max-width: 160px;
 	}
-	.estrella{
+
+	.estrella {
 		right: 2rem;
 	}
-	.estrella > img{
+
+	.estrella>img {
 		width: 3rem;
 	}
+
 	.container-cards::-webkit-scrollbar {
 		width: 12px;
 	}
+
 	.container-cards::-webkit-scrollbar-track {
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
 	}
+
 	.container-cards::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 	}
+
 	.splide2 .splide__arrows {
 		position: absolute;
 		left: -6% !important;
@@ -47,31 +56,38 @@ repsosive  section expertos
 		justify-content: space-between !important;
 		top: 70% !important;
 	}
+
 	.splide2 .splide__arrow--next {
 		top: 90% !important;
 	}
 
-	.section-contacto{
+	.section-contacto {
 		padding-left: 20px;
 		padding-right: 20px;
 
 	}
-	.section-contacto__title{
-		font-size:3.5rem
+
+	.section-contacto__title {
+		font-size: 3.5rem
 	}
+
 	.footer {
 		padding: 50px 0 20px 0;
 	}
+
 	.container-footer {
 		flex-direction: column;
 	}
+
 	.footer-icon-link {
 		margin-top: 20px;
 		width: 100%;
 	}
-	.container-footer > div {
+
+	.container-footer>div {
 		margin-bottom: 20px;
 	}
+
 	.footer-icon-link ul {
 		display: flex;
 		align-items: center;
@@ -80,27 +96,36 @@ repsosive  section expertos
 }
 
 @media (max-width: 1024px) {
-	.texto-banner span{
+	.texto-banner span {
 		width: 100%;
 	}
+
 	.container-cards {
-	flex-flow: column wrap;
-	row-gap: 1rem;
-	column-gap: 0rem;
+		flex-flow: column wrap;
+		row-gap: 1rem;
+		column-gap: 0rem;
 	}
-	.card-precio-medio{
+
+	.card-precio-medio {
 		transform: none;
 	}
+
+	.container-promo__container>p {
+		display: none;
+	}
+
 }
 
 @media (max-width: 824px) {
 	.title-header {
 		font-size: 30px;
 	}
+
 	.container-text-contactanos .btn-comprar {
 		margin-left: 0;
 		margin-top: 20px;
 	}
+
 	.banner {
 		flex-direction: column;
 		align-items: center;
@@ -108,89 +133,124 @@ repsosive  section expertos
 		padding: 20px;
 		width: 100%;
 	}
+
 	.texto-banner {
 		width: 80%;
 	}
-	.texto-banner h3{
+
+	.texto-banner h3 {
 		width: 100%;
 	}
+
 	.container-cards {
 		justify-content: flex-start;
 	}
+
 	.section-contactanos {
 		padding: 0px;
 	}
+
 	.section-contactanos img {
 		width: 90%;
 		padding-left: 20px;
 	}
+
 	.container-text-contactanos {
 		width: 100%;
 	}
+
 	.container-text-contactanos h2 {
 		margin-bottom: 20px;
 	}
+
 	.container-text-contactanos p {
 		font-size: 12px;
 	}
+
 	.footer {
 		flex-direction: column;
 		padding: 50px 20px;
 		align-items: center;
 	}
+
 	.footer-contact {
 		width: 60%;
 	}
+
 	.footer-icon-link {
 		width: 60%;
 	}
+
 	.container-cards svg {
 		width: 40px;
 	}
+
 	.container-cards .svg-icon {
 		width: 40px;
 	}
+
 	.splide__arrows {
 		display: none;
 	}
-	.section-contacto{
+
+	.section-contacto {
 		flex-direction: column;
 		row-gap: 40px;
 	}
-	.section-contacto__container-texto{
+
+	.section-contacto__container-texto {
 		margin-right: 0;
 	}
 }
 
 @media (max-width: 630px) {
-	.link_mail{
+	.link_mail {
+		display: none;
+	}
+
+	.container-promo__container-btn>p {
 		display: none;
 	}
 }
+
 @media (max-width: 500px) {
+	.container-promo__container-cronometro {
+		margin-right: 0.5rem;
+		padding: 0.4rem 0.5rem;
+	}
+
+	.contador-numero {
+		font-size: 1.8rem;
+	}
+
 	/* .title-header {
 		font-size: 25px;
 	} */
-	.container-url{
+	.container-url {
 		/* margin-top: 20px; */
 	}
-	.container-btn-whatapp{
+
+	.container-btn-whatapp {
 		display: none;
 	}
+
 	.container-url ul {
 		flex-direction: column;
 		row-gap: 30px;
 	}
-	
+
 	.splide__arrows {
 		display: none;
 	}
+
 	.texto-banner {
 		width: 100%;
 	}
+
 	.texto-banner h3 {
 		font-size: 60px;
 	}
+
 	.group-btn-banner {
 		display: flex;
 		flex-flow: row wrap;
@@ -198,99 +258,148 @@ repsosive  section expertos
 		align-items: end;
 		column-gap: 10px;
 	}
+
 	.splide2 .splide__pagination {
 		display: none !important;
 	}
+
 	.btn-banner-second {
 		margin-left: 0;
 		/* margin-top: 20px; */
 	}
- .container-formulario {
-		right:0px;
+
+	.container-formulario {
+		right: 0px;
 	}
+
 	.container-contactanos {
 		flex-direction: column;
 		padding: 50px 0px;
 	}
+
 	.section-contactanos img {
 		/* min-width: auto; */
 		width: 90%;
 		padding-left: 0px;
 	}
+
 	.section-expertos {
-    padding: 50px 0 0px 0;
-}
+		padding: 50px 0 0px 0;
+	}
+
 	.container-text-contactanos {
 		padding: 30px 0px;
 		width: 90%;
 	}
+
 	.container-text-contactanos p {
 		font-size: 14px;
 	}
+
 	.container-text-contactanos .btn-contactanos {
 		margin-top: 30px;
 	}
+
 	.container-text-contactanos .btn-comprar {
 		margin-left: 0;
 		margin-top: 20px;
 	}
+
 	.container-portafolio-img {
 		padding: 0 20px;
 	}
+
 	.footer-contact {
 		width: 100%;
 	}
+
 	.footer-icon-link {
 		width: 100%;
 	}
+
 	.container-cards {
 		column-gap: 0;
 		padding: 0 20px;
 		width: 100%;
 		box-sizing: border-box;
 	}
+
 	.container-cards svg {
 		width: 30px;
 	}
+
 	.container-cards .subtitle-card {
 		font-size: 12px;
 	}
+
 	.card-exp .svg-icon {
 		width: 30px;
 	}
+
 	.article-portafolio {
 		position: absolute;
 		top: 67%;
 		left: 25px;
 	}
+
 	.article-portafolio h3 {
 		font-size: 20px;
 	}
+
 	.article-portafolio p {
 		font-size: 15px;
 		width: 100%;
 		max-width: none;
 	}
 
-	.section-contacto__title{
-			font-size:2.8rem;
+	.section-contacto__title {
+		font-size: 2.8rem;
 	}
-	.container-contactanos_text-subtitle figure p{
+
+	.container-contactanos_text-subtitle figure p {
 		font-size: 1.5rem;
 	}
-	.container-contactanos_text-p{
-		font-size:1.5rem;
+
+	.container-contactanos_text-p {
+		font-size: 1.5rem;
 		line-height: 1.5;
 		color: #8e8e8e;
 		margin: 2rem 0;
 	}
-	.container-contactanos__telefono-texto{
-		font-size:1.8rem;
+
+	.container-contactanos__telefono-texto {
+		font-size: 1.8rem;
 	}
+
 	.formulario {
 		/* width:100%; */
 		/* width: 370px; */
 		min-width: 100%;
 		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 450px) {
+	.container-promo__container-btn button {
+		font-size: 1.5rem;
+	}
+
+	.container-promo__container {
+		font-size: 1.5rem;
+		margin-right: 0;
+	}
+
+	.container-promo__container span {
+		margin-right: 0.5rem;
+	}
+
+	.container-promo__container-cronometro {
+		margin-right: 0.5rem;
+		padding: 0.4rem 0.5rem;
+	}
+
+	.container-promo__container-descuento {
+		display: none;
+		margin-right: 0;
 	}
 }

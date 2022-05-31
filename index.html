@@ -43,7 +43,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/index.css" />
@@ -134,34 +134,51 @@
 					alt="slider de skillien"
 				/>
 				<header>
-					<div>
+					<div class="container-header">
 						<a href="index.html">
 							<h1 class="title-header" style="font-weight: bold">SKILLIEN</h1>
 						</a>
+						<div class="container-url">
+							<ul class="container-url-links">
+								<li class="link_mail">
+									<a href="mailto:Hola@skillien.com"
+										><i class="fa-solid fa-envelope"></i> hola@skillien.com</a
+									>
+								</li>
+								<li class="container-btn-whatapp">
+									<a
+										class="btn-whatsapp"
+										href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."
+										><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a
+									>
+								</li>
+								<li class="container-bandera">
+									<img
+										src="https://flagcdn.com/pe.svg"
+										width="32px"
+										alt="bandera"
+									/>
+									<p>Perú</p>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="container-url">
-						<ul class="container-url-links">
-							<li class="link_mail">
-								<a href="mailto:Hola@skillien.com"
-									><i class="fa-solid fa-envelope"></i> hola@skillien.com</a
-								>
-							</li>
-							<li class="container-btn-whatapp">
-								<a
-									class="btn-whatsapp"
-									href="https://api.whatsapp.com/send?phone=51977832615&text=Hola%2C%20vengo%20de%20la%20skillien.com%2C%20me%20gustar%C3%ADa%20tener%20mayor%20informaci%C3%B3n%20sobre..."
-									><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a
-								>
-							</li>
-							<li class="container-bandera">
-								<img
-									src="https://flagcdn.com/pe.svg"
-									width="32px"
-									alt="bandera"
-								/>
-								<p>Perú</p>
-							</li>
-						</ul>
+					<div class="container-promo">
+						<div class="container-promo__container">
+							<p>Adquiere tu sitio web desde</p>
+							<span>S/.499</span>
+							<div class="container-promo__container-descuento">
+								<p>Antes</p>
+								<p class="precio-tachado">S/.650</p>
+							</div>
+						</div>
+						<div class="container-promo__container-cronometro">
+							<span id="basicUsage">00:00:00</span>
+						</div>
+						<div class="container-promo__container-btn">
+							<p>solo por tiempo limitado</p>
+							<button>Comprar</button>
+						</div>
 					</div>
 				</header>
 				<section class="banner">
@@ -833,5 +850,6 @@
 		<script type="module" src="js/api.js"></script>
 		<script type="module" src="js/cotizador.js"></script>
 		<script type="module" src="js/index.js"></script>
+		<script type="module" src="js/timer.js"></script>
 	</body>
 </html>

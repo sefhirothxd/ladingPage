@@ -6,6 +6,16 @@ const $telefono = document.querySelector('#telefono');
 const $correo = document.querySelector('#correo');
 const $mensaje = document.querySelector('#mensaje');
 const notificacion = document.querySelector('.notificacion');
+const bannerPromo = document.querySelector('.container-promo');
+
+window.addEventListener('scroll', () => {
+	const currentScroll = window.pageYOffset;
+	if (currentScroll > 100) {
+		bannerPromo.classList.add('fixed');
+	} else {
+		bannerPromo.classList.remove('fixed');
+	}
+});
 
 $form.addEventListener('submit', async (e) => {
 	e.preventDefault();
