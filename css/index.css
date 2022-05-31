@@ -23,17 +23,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 20px 0 10px;
   box-sizing: border-box;
   /* background: darkgray; */
 }
 
 .container-promo {
-  margin-top: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +235,7 @@ body {
   position: relative;
   background: black;
 }
+
 .container-bandera {
   display: flex;
   justify-content: center;
@@ -1008,6 +1008,7 @@ contactanos section
   max-width: 1200px;
   margin: auto;
 }
+
 .section-servicos__container__items {
   /* padding-top: 30px; */
   display: -ms-grid;
@@ -1018,6 +1019,7 @@ contactanos section
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .servicios-items {
   background: red;
   padding: 20px;
@@ -1031,15 +1033,18 @@ contactanos section
   transition: 0.5s;
   position: relative;
 }
+
 .servicios-items img {
   width: 70px;
   pointer-events: none;
   user-select: none;
 }
+
 .servicios-items:hover {
   transform: scale(1.03);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
+
 .servicios-items a {
   color: rgb(255, 255, 255);
   background: rgb(219, 219, 219);
@@ -1048,12 +1053,14 @@ contactanos section
   /* opacity: 0.8; */
   transition: 0.5s;
 }
+
 .servicios-items:hover a {
   /* opacity: 1; */
   transition: 0.5s;
   color: rgb(255, 255, 255);
   background: rgb(6, 65, 153);
-} 
+}
+
 .servicios-items__title {
   font-weight: 700;
   font-size: 20px;
