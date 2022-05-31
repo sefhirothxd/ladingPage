@@ -380,7 +380,7 @@ repsosive  section expertos
 }
 
 @media (max-width: 450px) {
-	.container-promo__container-btn button {
+	.container-promo__container-btn>a {
 		font-size: 1.5rem;
 	}
 
