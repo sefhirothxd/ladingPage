@@ -1,4 +1,4 @@
-let end = new Date('06/04/2022 00:00 PM');
+let end = new Date('06/01/2022 00:00 AM');
 let _second = 1000;
 let _minute = _second * 60;
 let _hour = _minute * 60;
@@ -7,10 +7,7 @@ let timer;
 
 function showRemaining() {
 	let now = new Date();
-	console.log(now);
-	console.log(end);
 	let distance = end - now;
-	console.log(distance);
 	if (distance < 0) {
 		clearInterval(timer);
 		document.getElementById(
@@ -51,7 +48,7 @@ function showRemaining() {
 
 	document.getElementById('basicUsage').innerHTML =
 		`<div class="contador">
-    <p class="contador-numero" id="c-dias">` +
+    <p class="contador-numero dias-principal" id="c-dias">` +
 		dias +
 		':';
 	document.getElementById('basicUsage').innerHTML +=

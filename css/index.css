@@ -87,6 +87,10 @@ body {
   align-items: center;
 }
 
+.dias-principal {
+  display: none
+}
+
 .container-promo__container-btn {
   display: flex;
   align-items: center;
