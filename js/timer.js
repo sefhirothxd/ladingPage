@@ -1,4 +1,4 @@
-let end = new Date('06/01/2022 00:00 AM');
+let end = new Date('06/02/2022 00:00 AM');
 let _second = 1000;
 let _minute = _second * 60;
 let _hour = _minute * 60;
