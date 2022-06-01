@@ -10,7 +10,7 @@ const bannerPromo = document.querySelector('.container-promo');
 
 window.addEventListener('scroll', () => {
 	const currentScroll = window.pageYOffset;
-	if (currentScroll > 100) {
+	if (currentScroll > 70) {
 		bannerPromo.classList.add('fixed');
 	} else {
 		bannerPromo.classList.remove('fixed');
