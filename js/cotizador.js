@@ -160,13 +160,9 @@ const cambiandoInfo = async () => {
 	</div>
 	<div class="card-precio__container-list">
 		<div class="card-precio__container-list__item card-first-margin">
-			<img src="./img/check.svg" alt="" />
-			<p>Dominio (.com)</p>
-		</div>
-		<div class="card-precio__container-list__item">
-			<img src="./img/check.svg" alt="" />
-			<p>Hosting</p>
-		</div>
+								<img src="./img/check.svg" alt="" />
+								<p>Hosting y Dominio (Gratis)</p>
+							</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
 			<p>Certificado ssl</p>
@@ -245,13 +241,9 @@ const cambiandoInfo = async () => {
 	</div>
 	<div class="card-precio__container-list">
 		<div class="card-precio__container-list__item card-first-margin">
-			<img src="./img/check.svg" alt="" />
-			<p>Dominio (.com)</p>
-		</div>
-		<div class="card-precio__container-list__item">
-			<img src="./img/check.svg" alt="" />
-			<p>Hosting</p>
-		</div>
+								<img src="./img/check.svg" alt="" />
+								<p>Hosting y Dominio (Gratis)</p>
+							</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
 			<p>Certificado ssl</p>
@@ -329,14 +321,10 @@ const cambiandoInfo = async () => {
 		</p>
 	</div>
 	<div class="card-precio__container-list">
-		<div class="card-precio__container-list__item card-first-margin">
-			<img src="./img/check.svg" alt="icon de check" />
-			<p>Dominio (.com)</p>
-		</div>
-		<div class="card-precio__container-list__item">
-			<img src="./img/check.svg" alt="icon de check" />
-			<p>Hosting</p>
-		</div>
+	<div class="card-precio__container-list__item card-first-margin">
+	<img src="./img/check.svg" alt="" />
+	<p>Hosting y Dominio (Gratis)</p>
+</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
 			<p>Certificado ssl</p>
