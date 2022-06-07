@@ -181,7 +181,7 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
-			<p>10 Imagenes (edición)</p>
+			<p>10 Imágenes (edición)</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
@@ -197,7 +197,7 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
-			<p>Integracion con RRSS</p>
+			<p>Integración con RRSS</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<i class="fa-solid fa-xmark fa-lg close-x"></i>
@@ -258,11 +258,11 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
-			<p>5 Categorias</p>
+			<p>5 Categorías</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
-			<p>30 Imagenes (edición)</p>
+			<p>30 Imágenes (edición)</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
@@ -278,7 +278,7 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
-			<p>Integracion con RRSS</p>
+			<p>Integración con RRSS</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="" />
@@ -339,11 +339,11 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
-			<p>3 Categorias</p>
+			<p>3 Categorías</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
-			<p>15 Imagenes (edición)</p>
+			<p>15 Imágenes (edición)</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
@@ -359,7 +359,7 @@ const cambiandoInfo = async () => {
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
-			<p>Integracion con RRSS</p>
+			<p>Integración con RRSS</p>
 		</div>
 		<div class="card-precio__container-list__item">
 			<img src="./img/check.svg" alt="icon de check" />
