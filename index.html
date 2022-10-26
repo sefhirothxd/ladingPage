@@ -27,16 +27,16 @@
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
         });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MSF2D5K");
+      })(window, document, 'script', 'dataLayer', 'GTM-MSF2D5K');
     </script>
     <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -163,27 +163,27 @@
               </ul>
             </div>
           </div>
-          <div class="container-promo">
-            <div class="container-promo__container">
-              <p>Adquiere tu sitio web desde</p>
-              <span class="precio-promo">S/499</span>
-              <div class="container-promo__container-descuento">
-                <p>Antes</p>
-                <p class="precio-tachado">S/750</p>
-              </div>
-            </div>
-            <div class="container-promo__container-cronometro">
-              <span id="basicUsage">00:00:00</span>
-            </div>
-            <div class="container-promo__container-btn">
-              <p>solo por tiempo limitado</p>
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=51977832615&amp;text=Hola, me gustaria la oferta especial de skillien"
-                >Comprar</a
-              >
-            </div>
-          </div>
+          <!-- <div class="container-promo">
+						<div class="container-promo__container">
+							<p>Adquiere tu sitio web desde</p>
+							<span class="precio-promo">S/499</span>
+							<div class="container-promo__container-descuento">
+								<p>Antes</p>
+								<p class="precio-tachado">S/750</p>
+							</div>
+						</div>
+						<div class="container-promo__container-cronometro">
+							<span id="basicUsage">00:00:00</span>
+						</div>
+						<div class="container-promo__container-btn">
+							<p>solo por tiempo limitado</p>
+							<a
+								target="_blank"
+								href="https://api.whatsapp.com/send?phone=51977832615&amp;text=Hola, me gustaria la oferta especial de skillien"
+								>Comprar</a
+							>
+						</div>
+					</div> -->
         </header>
         <section class="banner">
           <article class="texto-banner">
@@ -216,24 +216,20 @@
           <div class="card-precio">
             <div class="card-precio__container">
               <h3 class="card-precio__container-title">Plan Básico</h3>
-              <div class="card-precio__container-money">
-                <p>
-                  499 <span>S/</span>
-                  <span class="card-precio__container-igv">+ IGV</span>
-                </p>
-              </div>
-              <p class="card-precio__container-money-price-after">
-                Precio normal <del>S/. 700</del>
-              </p>
+              <!-- <div class="card-precio__container-money">
+								<p>
+									499 <span>S/</span>
+									<span class="card-precio__container-igv">+ IGV</span>
+								</p>
+							</div>
+							<p class="card-precio__container-money-price-after">
+								Precio normal <del>S/. 700</del>
+							</p> -->
             </div>
             <div class="card-precio__container-list">
               <div class="card-precio__container-list__item card-first-margin">
                 <img src="./img/check.svg" alt="" />
-                <p>Dominio (.com)</p>
-              </div>
-              <div class="card-precio__container-list__item">
-                <img src="./img/check.svg" alt="" />
-                <p>Hosting</p>
+                <p>Hosting y Dominio (Gratis)</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
@@ -257,7 +253,7 @@
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
-                <p>2 Correo corporativo</p>
+                <p>1 Correo corporativo</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
@@ -288,37 +284,33 @@
                 <p class="x-p">Chat online</p>
               </div>
               <span class="card-precio__container-list__item"
-                ><i>* Renovación anual S/ 250</i></span
+                ><i>* Renovación anual $50</i></span
               >
               <a
                 href="https://api.whatsapp.com/send?phone=51977832615&text=Hola,%20vengo%20de%20skillien.%20Me%20gustar%C3%ADa%20tener%20mas%20informaci%C3%B3n%20del%20Plan%20Basico."
                 target="_blank"
                 class="btn-comprar-card"
-                >Comprar</a
+                >Cotizar</a
               >
             </div>
           </div>
           <div class="card-precio card-precio-medio">
             <div class="card-precio__container">
               <h3 class="card-precio__container-title">Plan Corporativo</h3>
-              <div class="card-precio__container-money">
-                <p>
-                  1000 <span>S/</span>
-                  <span class="card-precio__container-igv-corp">+ IGV</span>
-                </p>
-              </div>
-              <p class="card-precio__container-money-price-after">
-                Precio normal <del>S/. 1500</del>
-              </p>
+              <!-- <div class="card-precio__container-money">
+								<p>
+									1000 <span>S/</span>
+									<span class="card-precio__container-igv-corp">+ IGV</span>
+								</p>
+							</div>
+							<p class="card-precio__container-money-price-after">
+								Precio normal <del>S/. 1500</del>
+							</p> -->
             </div>
             <div class="card-precio__container-list">
               <div class="card-precio__container-list__item card-first-margin">
                 <img src="./img/check.svg" alt="" />
-                <p>Dominio (.com)</p>
-              </div>
-              <div class="card-precio__container-list__item">
-                <img src="./img/check.svg" alt="" />
-                <p>Hosting</p>
+                <p>Hosting y Dominio (Gratis)</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
@@ -342,7 +334,7 @@
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
-                <p>10 Correo corporativo</p>
+                <p>8 Correo corporativo</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="" />
@@ -373,37 +365,33 @@
                 <p>Chat online</p>
               </div>
               <span class="card-precio__container-list__item"
-                ><i>* Renovación anual s/ 390</i></span
+                ><i>* Renovación anual $80</i></span
               >
               <a
                 href="https://api.whatsapp.com/send?phone=51977832615&text=Hola,%20vengo%20de%20skillien.%20Me%20gustar%C3%ADa%20tener%20mas%20informaci%C3%B3n%20del%20Plan%20Corporativo."
                 target="_blank"
                 class="btn-comprar-card"
-                >Comprar</a
+                >Cotizar</a
               >
             </div>
           </div>
           <div class="card-precio">
             <div class="card-precio__container">
               <h3 class="card-precio__container-title">Plan Emprendedor</h3>
-              <div class="card-precio__container-money">
-                <p>
-                  799 <span>S/</span>
-                  <span class="card-precio__container-igv">+ IGV</span>
-                </p>
-              </div>
-              <p class="card-precio__container-money-price-after">
-                Precio normal <del>S/. 1200</del>
-              </p>
+              <!-- <div class="card-precio__container-money">
+								<p>
+									799 <span>S/</span>
+									<span class="card-precio__container-igv">+ IGV</span>
+								</p>
+							</div>
+							<p class="card-precio__container-money-price-after">
+								Precio normal <del>S/. 1200</del>
+							</p> -->
             </div>
             <div class="card-precio__container-list">
               <div class="card-precio__container-list__item card-first-margin">
-                <img src="./img/check.svg" alt="icon de check" />
-                <p>Dominio (.com)</p>
-              </div>
-              <div class="card-precio__container-list__item">
-                <img src="./img/check.svg" alt="icon de check" />
-                <p>Hosting</p>
+                <img src="./img/check.svg" alt="" />
+                <p>Hosting y Dominio (Gratis)</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="icon de check" />
@@ -427,7 +415,7 @@
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="icon de check" />
-                <p>5 Correo corporativo</p>
+                <p>4 Correo corporativo</p>
               </div>
               <div class="card-precio__container-list__item">
                 <img src="./img/check.svg" alt="icon de check" />
@@ -458,13 +446,13 @@
                 <p class="x-p">Chat online</p>
               </div>
               <span class="card-precio__container-list__item"
-                ><i>* Renovación anual s/ 350</i></span
+                ><i>* Renovación anual $70</i></span
               >
               <a
                 href="https://api.whatsapp.com/send?phone=51977832615&text=Hola,%20vengo%20de%20skillien.%20Me%20gustar%C3%ADa%20tener%20mas%20informaci%C3%B3n%20del%20Plan%20Emprendedor."
                 target="_blank"
                 class="btn-comprar-card"
-                >Comprar</a
+                >Cotizar</a
               >
             </div>
           </div>
@@ -897,28 +885,43 @@
     </main>
     <footer class="footer">
       <div class="container-footer">
-        <div>
-          <h1 class="title-header">SKILLIEN</h1>
+        <div class="container-footer__colum">
+          <h3>Soluciones</h3>
+          <ul>
+            <li>Desarrollo Web</li>
+            <li>Aula Virtual</li>
+            <li>Tienda Virtual</li>
+            <li>Google ADS</li>
+          </ul>
         </div>
-        <div class="footer-icon-link">
-          <!-- ul -->
+        <div class="container-footer__colum">
+          <ul class="container-footer__colum-2">
+            <li>Facebook ADS</li>
+            <li>Hosting</li>
+            <li>Correo Corporativo</li>
+            <li>Dominios</li>
+          </ul>
+        </div>
+        <div class="container-footer__colum">
+          <h3>Empresa</h3>
+          <ul>
+            <li>Sobre Nosotros</li>
+            <li>Trabaja con nosotros</li>
+            <li>Contáctanos</li>
+          </ul>
+        </div>
+        <div class="container-footer__colum">
+          <h3>Contacto</h3>
           <ul>
             <li>
-              <a class="footer-ancla" href="#">
-                <h3>Hablemos:</h3>
-                <div class="footer-ancla-icon">
-                  <!-- <img src="img/icon-tel.svg" alt="telefono" /> -->
-                  <p>+51 977 832 615</p>
-                </div>
-              </a>
+              <a href="tel:+51977832615"
+                ><i class="fa-brands fa-whatsapp"></i> +51 977 832 615</a
+              >
             </li>
             <li>
-              <a class="footer-ancla" href="#">
-                <h3>Escribenos:</h3>
-                <div class="footer-ancla-icon">
-                  <p>Hola@skillien.com</p>
-                </div>
-              </a>
+              <a href="mailto:Hola@skillien.com"
+                ><i class="fa-solid fa-envelope"></i> hola@skillien.com</a
+              >
             </li>
           </ul>
         </div>
@@ -927,8 +930,9 @@
         style="
           height: 1px;
           width: 100%;
-          background-color: rgb(255, 255, 255);
+          background-color: rgba(255, 255, 255, 0.55);
           border: none;
+          max-width: 1200px;
         "
       />
       <div class="container-footer-second">
@@ -938,14 +942,16 @@
             <p>© 2022 skillien.com Todos los derechos reservados.</p>
           </div>
           <div>
-            <h3>Síguenos:</h3>
             <div>
-              <a href="https://www.facebook.com/Skillien-163951272413413" target="_blank">
+              <a
+                href="https://www.facebook.com/Skillien-163951272413413"
+                target="_blank"
+              >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
-              <!-- <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a> -->
+              <a href="https://www.linkedin.com/company/skillien/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
               <a href="https://www.instagram.com/skillien.pe/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
               </a>
@@ -957,6 +963,6 @@
     <script type="module" src="js/api.js"></script>
     <script type="module" src="js/cotizador.js"></script>
     <script type="module" src="js/index.js"></script>
-    <script type="module" src="js/timer.js"></script>
+    <!-- <script type="module" src="js/timer.js"></script> -->
   </body>
 </html>

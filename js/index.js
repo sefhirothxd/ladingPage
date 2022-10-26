@@ -8,14 +8,14 @@ const $mensaje = document.querySelector('#mensaje');
 const notificacion = document.querySelector('.notificacion');
 const bannerPromo = document.querySelector('.container-promo');
 
-window.addEventListener('scroll', () => {
-	const currentScroll = window.pageYOffset;
-	if (currentScroll > 70) {
-		bannerPromo.classList.add('fixed');
-	} else {
-		bannerPromo.classList.remove('fixed');
-	}
-});
+// window.addEventListener('scroll', () => {
+// 	const currentScroll = window.pageYOffset;
+// 	if (currentScroll > 70) {
+// 		bannerPromo.classList.add('fixed');
+// 	} else {
+// 		bannerPromo.classList.remove('fixed');
+// 	}
+// });
 
 $form.addEventListener('submit', async (e) => {
 	e.preventDefault();

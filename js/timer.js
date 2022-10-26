@@ -1,4 +1,4 @@
-let end = new Date('06/02/2022 00:00 AM');
+let end = new Date('06/15/2022 00:00 AM');
 let _second = 1000;
 let _minute = _second * 60;
 let _hour = _minute * 60;
@@ -12,7 +12,7 @@ function showRemaining() {
 		clearInterval(timer);
 		document.getElementById(
 			'basicUsage'
-		).innerHTML = `<h2 class="titulo-visualizar">Ahora podrás visualizar<br> la trasmisión</h2>`;
+		).innerHTML = `<h2 class="titulo-visualizar">Promocion Terminada.</h2>`;
 		return;
 	}
 	let days = Math.floor(distance / _day);
