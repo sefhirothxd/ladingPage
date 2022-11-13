@@ -391,13 +391,15 @@ body {
 
 .formulario .form-input {
   padding: 15px;
-  background: #eef9ff;
-  border: none;
+  /* background: #eef9ff; */
+  /* border: none; */
+  border: 1px solid #dad9d9;
   /* border-bottom: 1px solid #8e8e8e; */
   margin-bottom: 15px;
   font-size: 1.5rem;
   outline: none;
   width: 100%;
+  border-radius: 10px;
 }
 
 .form-term {
@@ -579,6 +581,12 @@ css de por que expertos
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.card-precio__container hr {
+  width: 70%;
+  color: #b9b9b9;
+  margin: 2rem auto;
 }
 
 .card-precio__container-money {
@@ -843,7 +851,7 @@ contactanos section
   max-width: 378px;
   height: 348px;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -1031,6 +1039,7 @@ contactanos section
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
+  text-align: center;
 }
 
 .servicios-items img {
@@ -1045,18 +1054,22 @@ contactanos section
 }
 
 .servicios-items a {
-  color: rgb(255, 255, 255);
-  background: rgb(219, 219, 219);
-  padding: 5px 10px;
-  border-radius: 15px;
+  color: rgb(185, 185, 185);
+  /* background: rgb(219, 219, 219); */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  /* width: 100%; */
+  border-radius: 10px;
   /* opacity: 0.8; */
   transition: 0.5s;
+  border: 1px solid rgb(219, 219, 219);
 }
 
 .servicios-items:hover a {
   /* opacity: 1; */
   transition: 0.5s;
   color: rgb(255, 255, 255);
+  border: none;
   background: rgb(6, 65, 153);
 }
 
@@ -1101,7 +1114,10 @@ contactanos section
 }
 
 .section-contacto__title {
-  color: #000;
+  background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: #000; */
   font-size: 4.5rem;
   font-weight: 700;
 }
@@ -1220,7 +1236,7 @@ contactanos section
 }
 
 .container-footer__colum>ul>li {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.55);
 
@@ -1248,6 +1264,9 @@ contactanos section
   justify-content: space-between;
   align-items: center;
   font-size: 21px;
+}
+.container-footer-social .container-heart p {
+  font-size: 18px;
 }
 
 .container-footer-social>div>div>a>i {
