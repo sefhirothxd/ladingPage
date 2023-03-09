@@ -49,7 +49,6 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-right: 1.6rem;
-
 }
 
 .container-promo__container-descuento {
@@ -62,7 +61,7 @@ body {
   text-decoration-line: line-through;
 }
 
-.container-promo__container>p {
+.container-promo__container > p {
   /* margin: 0 auto; */
   margin-right: 2.3rem;
 }
@@ -88,7 +87,7 @@ body {
 }
 
 .dias-principal {
-  display: none
+  display: none;
 }
 
 .container-promo__container-btn {
@@ -96,17 +95,16 @@ body {
   align-items: center;
 }
 
-.container-promo__container-btn>a {
+.container-promo__container-btn > a {
   background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   color: #fff;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 2.2rem;
   font-weight: 500;
   border-radius: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
-
 
 .container-promo__container-btn p {
   margin-right: 1.3rem;
@@ -128,16 +126,16 @@ body {
 }
 
 .slide-right {
-  animation: slide-right 0.4s linear both
+  animation: slide-right 0.4s linear both;
 }
 
 @keyframes slide-right {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-20px)
+    transform: translateX(-20px);
   }
 }
 
@@ -156,7 +154,7 @@ body {
   z-index: 999;
 }
 
-.notificacion>i {
+.notificacion > i {
   margin: 0 auto;
   padding: 10px 10px;
 }
@@ -245,7 +243,7 @@ body {
   padding: 5px 10px;
 }
 
-.container-bandera>p {
+.container-bandera > p {
   color: #969696;
   font-size: 16px;
   font-weight: 500;
@@ -473,7 +471,7 @@ css de por que expertos
 }
 
 .text-expertos {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #003a84;
   text-align: center;
   /* margin-bottom: 7rem; */
@@ -494,7 +492,7 @@ css de por que expertos
 }
 
 .text-expert-p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 7rem;
   font-weight: 400;
@@ -562,7 +560,7 @@ css de por que expertos
   border-radius: 0 0 30px 30px;
 }
 
-.estrella>img {
+.estrella > img {
   width: 4rem;
   display: block;
   margin-top: 3rem;
@@ -609,7 +607,7 @@ css de por que expertos
   position: relative;
 }
 
-.card-precio__container-money p>span {
+.card-precio__container-money p > span {
   font-size: 2.5rem;
   padding-bottom: 15px;
   position: absolute;
@@ -852,8 +850,9 @@ contactanos section
   height: 348px;
   width: 100%;
   border-radius: 20px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   overflow: hidden;
+  opacity: 0;
 }
 
 .portafolio-img:hover {
@@ -1216,7 +1215,7 @@ contactanos section
   box-sizing: border-box;
 }
 
-.container-footer__colum>ul {
+.container-footer__colum > ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1230,16 +1229,15 @@ contactanos section
   padding-top: 30px;
 }
 
-.container-footer__colum>h3 {
+.container-footer__colum > h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.container-footer__colum>ul>li {
+.container-footer__colum > ul > li {
   font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.55);
-
 }
 
 .container-footer-second {
@@ -1259,7 +1257,7 @@ contactanos section
   color: rgba(255, 255, 255, 0.55);
 }
 
-.container-footer-social>div {
+.container-footer-social > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1269,7 +1267,7 @@ contactanos section
   font-size: 18px;
 }
 
-.container-footer-social>div>div>a>i {
+.container-footer-social > div > div > a > i {
   font-size: 20px;
   margin-left: 10px;
 }
@@ -1330,4 +1328,39 @@ contactanos section
 .footer-icon-link ul li {
   text-decoration-line: none;
   color: #fff;
+}
+
+/* 
+  filter button proyect
+
+*/
+.container-list-filter {
+  width: 100%;
+  max-width: 1175px;
+}
+.container-list-filter__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-filter {
+  font-size: 25px;
+  background-color: #eeeeee;
+  color: #7c7c7c;
+  border-radius: 20px;
+  width: 200px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.active {
+  background-color: #003a84;
+  color: #ffffff;
 }
