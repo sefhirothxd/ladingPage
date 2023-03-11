@@ -7,6 +7,7 @@ const proyectos = [
     img: '../img/KITOPERU.jpg',
     url: 'https://kitoperu.com/',
     type: 'ecommerce',
+    size: 'small',
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const proyectos = [
     img: '../img/ROTHENBERGERPERU.jpg',
     url: 'https://rothenbergerperu.com/',
     type: 'landing',
+    size: 'large',
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const proyectos = [
     img: '../img/X-SPARK.jpg',
     url: 'https://antichispaherramientas.com/',
     type: 'app',
+    size: 'large',
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ const proyectos = [
     img: '../img/COMERCYM.jpg',
     url: 'https://comercym.com/',
     type: 'aula',
+    size: 'small',
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ const proyectos = [
     img: '../img/TORQUEPERU.jpg',
     url: 'https://torqueperu.com/',
     type: 'ecommerce',
+    size: 'small',
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ const proyectos = [
     img: '../img/blockbuster.jpg',
     url: 'https://blockbuster-two.vercel.app/',
     type: 'ecommerce',
+    size: 'large',
   },
 ];
 
@@ -64,9 +70,15 @@ const btn_aula = document.querySelector('.aula');
 const btn_aplicativo = document.querySelector('.aplicativo');
 
 const initProyect = () => {
+  btn_todos.classList.add('active');
+  btn_ecommerce.classList.remove('active');
+  btn_aula.classList.remove('active');
+  btn_landing.classList.remove('active');
+  btn_aplicativo.classList.remove('active');
+
   containerProyect.innerHTML = '';
   proyectos.forEach((p) => {
-    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name}">
+    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name} ${p.size}">
     <div class="portfolio-gradient"></div>
     <img class="img-portafolio" loading="lazy" src=${p.img} alt="" />
     <article class="article-portafolio">
@@ -74,55 +86,20 @@ const initProyect = () => {
       <p>${p.description}</p>
     </article>
   </a>`;
-    var tl = anime.timeline({
-      easing: 'easeInOutSine',
-      duration: 100,
-    });
-
-    // Add children
-    tl.add({
-      targets: '.portafolio-img',
-      translateY: 1500,
-    });
-
-    tl.add({
-      targets: '.card-1',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
-    tl.add({
-      targets: '.card-2',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
-    tl.add({
-      targets: '.card-3',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
-    tl.add({
-      targets: '.card-4',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
-    tl.add({
-      targets: '.card-5',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
-    tl.add({
-      targets: '.card-6',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
   });
 };
 const landing = () => {
+  btn_todos.classList.remove('active');
+  btn_ecommerce.classList.remove('active');
+  btn_aula.classList.remove('active');
+  btn_landing.classList.add('active');
+  btn_aplicativo.classList.remove('active');
+
   const filter = proyectos.filter((f) => f.type == 'landing');
   console.log(filter);
   containerProyect.innerHTML = '';
   filter.forEach((p) => {
-    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img">
+    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name} ${p.size}">
     <div class="portfolio-gradient"></div>
     <img class="img-portafolio" loading="lazy" src=${p.img} alt="" />
     <article class="article-portafolio">
@@ -130,20 +107,20 @@ const landing = () => {
       <p>${p.description}</p>
     </article>
   </a>`;
-
-    tl.add({
-      targets: '.card-1',
-      opacity: 1,
-      translateY: [{ value: 0, duration: 300 }],
-    });
   });
 };
 const ecommerce = () => {
+  btn_todos.classList.remove('active');
+  btn_ecommerce.classList.add('active');
+  btn_aula.classList.remove('active');
+  btn_landing.classList.remove('active');
+  btn_aplicativo.classList.remove('active');
+
   const filter = proyectos.filter((f) => f.type == 'ecommerce');
   console.log(filter);
   containerProyect.innerHTML = '';
   filter.forEach((p) => {
-    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img">
+    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name} ${p.size}">
     <div class="portfolio-gradient"></div>
     <img class="img-portafolio" loading="lazy" src=${p.img} alt="" />
     <article class="article-portafolio">
@@ -154,11 +131,17 @@ const ecommerce = () => {
   });
 };
 const app = () => {
+  btn_todos.classList.remove('active');
+  btn_ecommerce.classList.remove('active');
+  btn_aula.classList.remove('active');
+  btn_landing.classList.remove('active');
+  btn_aplicativo.classList.add('active');
+
   const filter = proyectos.filter((f) => f.type == 'app');
   console.log(filter);
   containerProyect.innerHTML = '';
   filter.forEach((p) => {
-    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img">
+    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name} ${p.size}">
     <div class="portfolio-gradient"></div>
     <img class="img-portafolio" loading="lazy" src=${p.img} alt="" />
     <article class="article-portafolio">
@@ -169,11 +152,17 @@ const app = () => {
   });
 };
 const aula = () => {
+  btn_todos.classList.remove('active');
+  btn_ecommerce.classList.remove('active');
+  btn_aula.classList.add('active');
+  btn_landing.classList.remove('active');
+  btn_aplicativo.classList.remove('active');
+
   const filter = proyectos.filter((f) => f.type == 'aula');
   console.log(filter);
   containerProyect.innerHTML = '';
   filter.forEach((p) => {
-    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img">
+    containerProyect.innerHTML += `<a href=${p.url} target="_blank" class="portafolio-img ${p.name} ${p.size}">
     <div class="portfolio-gradient"></div>
     <img class="img-portafolio" loading="lazy" src=${p.img} alt="" />
     <article class="article-portafolio">

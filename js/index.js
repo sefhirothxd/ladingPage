@@ -54,3 +54,9 @@ $form.addEventListener('submit', async (e) => {
 });
 
 initProyect();
+
+// for (let i = 0; i < children.length; i++) {
+//   if (i % 2 === 0) {
+//     container.classList.toggle('even');
+//   }
+// }
