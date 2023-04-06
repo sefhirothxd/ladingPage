@@ -49,7 +49,6 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-right: 1.6rem;
-
 }
 
 .container-promo__container-descuento {
@@ -62,7 +61,7 @@ body {
   text-decoration-line: line-through;
 }
 
-.container-promo__container>p {
+.container-promo__container > p {
   /* margin: 0 auto; */
   margin-right: 2.3rem;
 }
@@ -88,7 +87,7 @@ body {
 }
 
 .dias-principal {
-  display: none
+  display: none;
 }
 
 .container-promo__container-btn {
@@ -96,17 +95,16 @@ body {
   align-items: center;
 }
 
-.container-promo__container-btn>a {
+.container-promo__container-btn > a {
   background: linear-gradient(90.29deg, #243492 0.95%, #046ebe 99.49%);
   color: #fff;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 2.2rem;
   font-weight: 500;
   border-radius: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
-
 
 .container-promo__container-btn p {
   margin-right: 1.3rem;
@@ -128,16 +126,16 @@ body {
 }
 
 .slide-right {
-  animation: slide-right 0.4s linear both
+  animation: slide-right 0.4s linear both;
 }
 
 @keyframes slide-right {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-20px)
+    transform: translateX(-20px);
   }
 }
 
@@ -156,7 +154,7 @@ body {
   z-index: 999;
 }
 
-.notificacion>i {
+.notificacion > i {
   margin: 0 auto;
   padding: 10px 10px;
 }
@@ -248,7 +246,7 @@ body {
   border-radius: 5px;
 }
 
-.container-bandera>p {
+.container-bandera > p {
   color: #969696;
   font-size: 16px;
   font-weight: 500;
@@ -476,7 +474,7 @@ css de por que expertos
 }
 
 .text-expertos {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #003a84;
   text-align: center;
   /* margin-bottom: 7rem; */
@@ -497,7 +495,7 @@ css de por que expertos
 }
 
 .text-expert-p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 7rem;
   font-weight: 400;
@@ -565,7 +563,7 @@ css de por que expertos
   border-radius: 0 0 30px 30px;
 }
 
-.estrella>img {
+.estrella > img {
   width: 4rem;
   display: block;
   margin-top: 3rem;
@@ -612,7 +610,7 @@ css de por que expertos
   position: relative;
 }
 
-.card-precio__container-money p>span {
+.card-precio__container-money p > span {
   font-size: 2.5rem;
   padding-bottom: 15px;
   position: absolute;
@@ -846,22 +844,29 @@ contactanos section
   max-width: 1440px;
   box-sizing: border-box;
   gap: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
 .portafolio-img {
   position: relative;
-  /* background: #639bc6; */
-  max-width: 378px;
-  height: 348px;
+  height: 540px;
   width: 100%;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
+}
+
+.small {
+  flex-basis: calc(33.33% - 20px);
+}
+
+.large {
+  flex-basis: calc(66.66% - 20px);
 }
 
 .portafolio-img:hover {
   transform: scale(1.03);
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 
 .portafolio-img img:hover {
@@ -875,20 +880,26 @@ contactanos section
 .portfolio-gradient {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
   width: 100%;
-  height: 170px;
+  height: 250px;
   position: absolute;
   z-index: 2;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .article-portafolio {
   position: absolute;
-  top: 67%;
+  top: 68%;
   left: 30px;
   z-index: 2;
   /* opacity: 0; */
 }
-
+.portafolio-img:hover > img {
+  width: 100%;
+  display: block;
+  filter: brightness(50%);
+  object-fit: cover;
+  height: 100%;
+}
 /* .portafolio-img:hover .article-portafolio{
   opacity: 1;
 } */
@@ -909,8 +920,7 @@ contactanos section
 }
 
 .img-portafolio {
-  max-width: 378px;
-  height: 348px;
+  height: 100%;
   width: 100%;
   object-position: top;
   object-fit: cover;
@@ -1219,7 +1229,7 @@ contactanos section
   box-sizing: border-box;
 }
 
-.container-footer__colum>ul {
+.container-footer__colum > ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1233,16 +1243,15 @@ contactanos section
   padding-top: 30px;
 }
 
-.container-footer__colum>h3 {
+.container-footer__colum > h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.container-footer__colum>ul>li {
+.container-footer__colum > ul > li {
   font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.55);
-
 }
 
 .container-footer-second {
@@ -1262,7 +1271,7 @@ contactanos section
   color: rgba(255, 255, 255, 0.55);
 }
 
-.container-footer-social>div {
+.container-footer-social > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1272,7 +1281,7 @@ contactanos section
   font-size: 18px;
 }
 
-.container-footer-social>div>div>a>i {
+.container-footer-social > div > div > a > i {
   font-size: 20px;
   margin-left: 10px;
 }
@@ -1333,4 +1342,42 @@ contactanos section
 .footer-icon-link ul li {
   text-decoration-line: none;
   color: #fff;
+}
+
+/* 
+  filter button proyect
+
+*/
+.container-list-filter {
+  width: 100%;
+  max-width: 1400px;
+}
+.container-list-filter__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.btn-filter {
+  font-size: 25px;
+  background-color: #eeeeee;
+  color: #7c7c7c;
+  border-radius: 20px;
+  width: 200px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.active {
+  background-color: #003a84;
+  color: #ffffff;
 }
