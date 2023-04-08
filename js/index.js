@@ -60,3 +60,24 @@ initProyect();
 //     container.classList.toggle('even');
 //   }
 // }
+
+const slides = document.querySelectorAll('.container-banner');
+const punto = document.querySelectorAll('.punto');
+
+const nextSlide = {
+  0: 0,
+  1: 33,
+  2: 66,
+};
+
+setInterval(() => {
+  let number = Math.floor(Math.random() * 3);
+
+  slides[0].style.transform = `translateX(-${nextSlide[Math.floor(number)]}%)`;
+  punto[0].classList.remove('active-punto');
+  punto[1].classList.remove('active-punto');
+  punto[2].classList.remove('active-punto');
+  punto[number].classList.add('active-punto');
+
+  console.log(nextSlide[number]);
+}, 3000);
